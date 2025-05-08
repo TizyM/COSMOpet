@@ -44,3 +44,68 @@ nav ul li a {
     color: #F6AD55;
     font-size: 18px;
 }
+/* Stile overlay */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  text-align: center;
+}
+
+/* Stile contenuto overlay */
+.overlay-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+/* Stile Logo Movere */
+.logo-movere {
+  width: 120px; /* Regola la dimensione */
+  margin-bottom: 15px;
+}
+
+/* Stile immagine Cosmo */
+#cosmo-img {
+  width: 150px;
+  position: relative;
+  animation: floating 5s infinite alternate ease-in-out;
+}
+
+/* Animazione per Cosmo */
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Stile contatti */
+.contact {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.contact a {
+  color: #ff6600;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
