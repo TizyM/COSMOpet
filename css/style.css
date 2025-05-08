@@ -6,29 +6,26 @@ body {
     color: #ffffff;
 }
 
-/* Stile Logo Movere */
 .logo-movere {
-    width: 150px; /* Dimensione corretta */
+    width: 150px;
     height: auto;
     display: block;
     margin: 10px auto;
     opacity: 1;
 }
 
-/* Stile immagine Cosmo */
 #cosmo-img {
-    max-width: 400px; /* Limita la grandezza massima */
-    width: 80%; /* Adatta meglio sui vari dispositivi */
+    max-width: 400px;
+    width: 80%;
     height: auto;
     display: block;
     margin: 20px auto;
     opacity: 1;
     position: relative;
-    top: 60px; /* Leggermente più basso */
+    top: 60px;
     animation: floating 5s infinite alternate ease-in-out;
 }
 
-/* Animazione per Cosmo */
 @keyframes floating {
     0% {
         transform: translateY(0px);
@@ -41,7 +38,6 @@ body {
     }
 }
 
-/* Animazione di CosmoPet */
 .hero img {
     width: 150px;
     animation: float 3s infinite alternate ease-in-out;
@@ -52,7 +48,6 @@ body {
     to { transform: translateY(-20px); }
 }
 
-/* Stili del pulsante lingua */
 #language-toggle {
     position: absolute;
     top: 10px;
@@ -63,7 +58,6 @@ body {
     cursor: pointer;
 }
 
-/* Stili del Menu */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -80,7 +74,6 @@ nav ul li a {
     font-size: 18px;
 }
 
-/* Stile overlay */
 #overlay {
     position: fixed;
     top: 0;
@@ -95,7 +88,6 @@ nav ul li a {
     text-align: center;
 }
 
-/* Stile contenuto overlay */
 .overlay-content {
     background: #fff;
     padding: 20px;
@@ -103,22 +95,20 @@ nav ul li a {
     max-width: 90%;
 }
 
-/* Stili per il testo nell'overlay */
 #overlay-title, #overlay-text {
     opacity: 1;
     display: block;
-    color: black; /* Testo ben visibile */
+    color: black;
     text-align: center;
 }
 
-/* Stile pulsante avvio avventura */
 #start-adventure {
     display: block;
     opacity: 1;
     position: relative;
     margin-top: 20px;
     padding: 12px 20px;
-    background-color: #F6AD55; 
+    background-color: #F6AD55;
     color: white;
     font-size: 18px;
     border-radius: 10px;
@@ -127,18 +117,16 @@ nav ul li a {
     z-index: 1001;
 }
 
-/* Stile fumetto - Cosmo speech bubble */
 .speech-bubble {
-    max-width: 70%; /* Riduce la larghezza */
-    font-size: 16px; /* Testo più piccolo */
-    padding: 15px; /* Meno spazio interno */
+    max-width: 70%;
+    font-size: 16px;
+    padding: 15px;
     position: relative;
-    top: 10px; /* Leggermente abbassato */
+    top: 10px;
     margin: 15px auto;
     opacity: 1;
 }
 
-/* Effetto fumetto */
 .speech-bubble::after {
     content: "";
     position: absolute;
@@ -151,7 +139,6 @@ nav ul li a {
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
-/* Stile delle icone */
 .icons-container {
     display: flex;
     justify-content: center;
@@ -164,40 +151,29 @@ nav ul li a {
     height: auto;
 }
 
-/* Ottimizzazione per mobile */
+/* Ottimizzazione per dispositivi mobili */
 @media (max-width: 600px) {
     #cosmo-img {
-        max-width: 250px; /* Più piccolo su dispositivi mobili */
-        width: 70%; /* Adattabile */
-        top: 40px; /* Regola la posizione */
+        max-width: 250px;
+        width: 70%;
+        top: 40px;
     }
 
     #start-adventure {
-        font-size: 16px; /* Testo più leggibile su mobile */
-        padding: 10px 15px; /* Riduce lo spazio interno */
-        width: 90%; /* Adatta meglio alla dimensione dello schermo */
-        max-width: 250px; /* Limita la larghezza massima */
+        font-size: 16px;
+        padding: 10px 15px;
+        width: 90%;
+        max-width: 250px;
     }
-}
 
     .speech-bubble {
         max-width: 80%;
         font-size: 14px;
         padding: 10px;
     }
-}
+
     .logo-movere {
         width: 120px;
-    }
-
-    #cosmo-img {
-        width: 150px;
-    }
-
-    .speech-bubble {
-        font-size: 16px;
-        max-width: 95%;
-        padding: 15px;
     }
 
     .icon {
