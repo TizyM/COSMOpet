@@ -17,7 +17,7 @@ body {
 
 /* Stile immagine Cosmo */
 #cosmo-img {
-    width: 200px; /* Dimensione regolabile */
+    width: 100%; /* Dimensione regolabile */
     height: auto;
     display: block;
     margin: 20px auto;
