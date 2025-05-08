@@ -105,14 +105,30 @@ nav ul li a {
 #overlay-title, #overlay-text {
     opacity: 1;
     display: block;
-    color: white;
+    color: black; /* Testo ben visibile */
     text-align: center;
+}
+
+/* Stile pulsante avvio avventura */
+#start-adventure {
+    display: block;
+    opacity: 1;
+    position: relative;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #F6AD55; 
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
 }
 
 /* Stile fumetto - Cosmo speech bubble */
 .speech-bubble {
     background: #fff;
-    color: #2a2a2a;
+    color: black; /* Testo più leggibile */
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
@@ -152,6 +168,13 @@ nav ul li a {
 
 /* Ottimizzazione per mobile */
 @media (max-width: 600px) {
+    #language-toggle {
+        position: fixed; 
+        top: 5px;
+        right: 5px;
+        z-index: 10000;
+    }
+
     .logo-movere {
         width: 120px;
     }
