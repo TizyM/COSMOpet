@@ -17,14 +17,13 @@ body {
 
 /* Stile immagine Cosmo */
 #cosmo-img {
-    max-width: 400px; /* Limita la grandezza massima */
-    width: 80%; /* Adatta meglio sui vari dispositivi */
+    width: 100%; /* Dimensione regolabile */
     height: auto;
     display: block;
     margin: 20px auto;
     opacity: 1;
     position: relative;
-    top: 60px; /* Leggermente più basso */
+    top: 80px; /* Sposta l'immagine più in basso */
     animation: floating 5s infinite alternate ease-in-out;
 }
 
@@ -129,12 +128,16 @@ nav ul li a {
 
 /* Stile fumetto - Cosmo speech bubble */
 .speech-bubble {
-    max-width: 70%; /* Riduce la larghezza */
-    font-size: 16px; /* Testo più piccolo */
-    padding: 15px; /* Meno spazio interno */
+    background: #fff;
+    color: black; /* Testo più leggibile */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    font-size: 18px;
     position: relative;
-    top: 10px; /* Leggermente abbassato */
-    margin: 15px auto;
+    text-align: center;
+    margin: 20px auto;
     opacity: 1;
 }
 
@@ -166,18 +169,12 @@ nav ul li a {
 
 /* Ottimizzazione per mobile */
 @media (max-width: 600px) {
-    #cosmo-img {
-        max-width: 250px; /* Più piccolo su dispositivi mobili */
-        width: 70%; /* Adattabile */
-        top: 40px; /* Regola la posizione */
+    #language-toggle {
+        position: fixed; 
+        top: 5px;
+        right: 5px;
+        z-index: 10000;
     }
-
-    .speech-bubble {
-        max-width: 80%;
-        font-size: 14px;
-        padding: 10px;
-    }
-}
 
     .logo-movere {
         width: 120px;
