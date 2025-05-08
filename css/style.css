@@ -23,6 +23,7 @@ body {
     margin: 20px auto;
     opacity: 1;
     position: relative;
+    top: 80px; /* Sposta l'immagine più in basso */
     animation: floating 5s infinite alternate ease-in-out;
 }
 
