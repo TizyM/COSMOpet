@@ -29,3 +29,25 @@ document.getElementById('language-toggle').addEventListener('click', () => {
     
     alert(`Lingua cambiata a ${lang === 'it' ? 'Italiano' : 'Inglese'}`);
 });
+document.addEventListener("DOMContentLoaded", function () {
+    let countdownElement = document.getElementById("countdown");
+    let startButton = document.getElementById("start-adventure");
+    let overlay = document.getElementById("overlay");
+
+    // Conto alla rovescia animato
+    let countdown = 3;
+    let countdownInterval = setInterval(() => {
+        if (countdown > 0) {
+            countdownElement.textContent = `${countdown}... 🚀`;
+            countdown--;
+        } else {
+            countdownElement.textContent = "Ready, set, go! 🚀";
+            clearInterval(countdownInterval);
+        }
+    }, 1000); // Ogni secondo cambia il numero
+
+    // Nasconde l’overlay e mostra la pagina principale quando si clicca il pulsante
+    startButton.addEventListener("click", function () {
+        overlay.style.display = "none";
+    });
+});
