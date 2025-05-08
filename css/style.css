@@ -1,0 +1,46 @@
+/* Stili Generali */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #0B3D91;
+    color: #ffffff;
+}
+
+/* Animazione di CosmoPet */
+.hero img {
+    width: 150px;
+    animation: float 3s infinite alternate ease-in-out;
+}
+
+@keyframes float {
+    from { transform: translateY(0px); }
+    to { transform: translateY(-20px); }
+}
+
+/* Stili del pulsante lingua */
+#language-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #F6AD55;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Stili del Menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F6AD55;
+    font-size: 18px;
+}
