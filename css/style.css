@@ -6,6 +6,39 @@ body {
     color: #ffffff;
 }
 
+/* Stile Logo Movere */
+.logo-movere {
+    width: 150px; /* Dimensione corretta */
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    opacity: 1;
+}
+
+/* Stile immagine Cosmo */
+#cosmo-img {
+    width: 200px; /* Dimensione regolabile */
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    opacity: 1;
+    position: relative;
+    animation: floating 5s infinite alternate ease-in-out;
+}
+
+/* Animazione per Cosmo */
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 /* Animazione di CosmoPet */
 .hero img {
     width: 150px;
@@ -44,68 +77,96 @@ nav ul li a {
     color: #F6AD55;
     font-size: 18px;
 }
+
 /* Stile overlay */
 #overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-  text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    text-align: center;
 }
 
 /* Stile contenuto overlay */
 .overlay-content {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 90%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
 }
 
-/* Stile Logo Movere */
-.logo-movere {
-  width: 120px; /* Regola la dimensione */
-  margin-bottom: 15px;
+/* Stili per il testo nell'overlay */
+#overlay-title, #overlay-text {
+    opacity: 1;
+    display: block;
+    color: white;
+    text-align: center;
 }
 
-/* Stile immagine Cosmo */
-#cosmo-img {
-  width: 150px;
-  position: relative;
-  animation: floating 5s infinite alternate ease-in-out;
+/* Stile fumetto - Cosmo speech bubble */
+.speech-bubble {
+    background: #fff;
+    color: #2a2a2a;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    font-size: 18px;
+    position: relative;
+    text-align: center;
+    margin: 20px auto;
+    opacity: 1;
 }
 
-/* Animazione per Cosmo */
-@keyframes floating {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px) rotate(5deg);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+/* Effetto fumetto */
+.speech-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 15px;
+    background: #fff;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
-/* Stile contatti */
-.contact {
-  text-align: center;
-  font-size: 18px;
-  margin-top: 20px;
+/* Stile delle icone */
+.icons-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
 }
 
-.contact a {
-  color: #ff6600;
-  font-weight: bold;
-  text-decoration: none;
+.icon {
+    width: 60px;
+    height: auto;
 }
 
-.contact a:hover {
-  text-decoration: underline;
+/* Ottimizzazione per mobile */
+@media (max-width: 600px) {
+    .logo-movere {
+        width: 120px;
+    }
+
+    #cosmo-img {
+        width: 150px;
+    }
+
+    .speech-bubble {
+        font-size: 16px;
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    .icon {
+        width: 40px;
+    }
 }
