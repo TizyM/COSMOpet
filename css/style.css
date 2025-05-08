@@ -172,6 +172,14 @@ nav ul li a {
         top: 40px; /* Regola la posizione */
     }
 
+    #start-adventure {
+        font-size: 16px; /* Testo più leggibile su mobile */
+        padding: 10px 15px; /* Riduce lo spazio interno */
+        width: 90%; /* Adatta meglio alla dimensione dello schermo */
+        max-width: 250px; /* Limita la larghezza massima */
+    }
+}
+
     .speech-bubble {
         max-width: 80%;
         font-size: 14px;
