@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CosmoPet - Your Space Health Assistant</title>
-  <link rel="stylesheet" href="css/style.css" />
   <style>
     body, html {
       margin: 0;
@@ -20,7 +19,7 @@
       left: 0;
       height: 100%;
       width: 100%;
-      background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://www.transparenttextures.com/patterns/stardust.png');
+      background: url('https://www.transparenttextures.com/patterns/stardust.png') no-repeat center center;
       background-size: cover;
       z-index: 9999;
       display: flex;
@@ -102,6 +101,31 @@
       color: #00ffff;
       text-decoration: underline;
     }
+
+    .movere-logo {
+      width: 150px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      #cosmo-img {
+        width: 150px;
+      }
+
+      .icon {
+        width: 50px;
+        height: 50px;
+      }
+
+      #start-adventure {
+        padding: 10px 20px;
+        font-size: 1em;
+      }
+
+      .movere-logo {
+        width: 120px;
+      }
+    }
   </style>
 </head>
 
@@ -109,7 +133,7 @@
   <div id="overlay">
     <button id="language-toggle">🇮🇹 / 🇬🇧</button>
 
-    <img src="https://github.com/TizyM/COSMOpet/raw/main/a%20dog%20astronaut%20named%20COSMO.png" 
+    <img src="https://github.com/TizyM/COSMOpet/blob/main/a%20dog%20astronaut%20named%20COSMO.png" 
          alt="Cosmo the space dog" id="cosmo-img">
 
     <div class="speech-bubble">
@@ -133,6 +157,7 @@
     <button id="start-adventure">🌍 Start your adventure!</button>
 
     <div class="project-link">
+      <img src="https://github.com/TizyM/COSMOpet/blob/main/Movere%202.0%20Logo.jpg" alt="Movere Logo" class="movere-logo">
       <p>
         CosmoPet is the prototype of <strong>Team Movere 2.0</strong> for the  
         <a href="https://taikai.network/cassinihackathons/hackathons/space-for-healthcare/projects/cm8rvuu4f01r4c05hg4aoasqe/idea" 
@@ -144,7 +169,7 @@
 
   <script>
     document.getElementById("start-adventure").addEventListener("click", () => {
-      document.getElementById("overlay").style.display = "none";
+      window.location.href = "main.html";
     });
 
     document.getElementById("language-toggle").addEventListener("click", () => {
