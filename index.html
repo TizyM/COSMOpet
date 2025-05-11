@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CosmoPet - Your Space Health Assistant</title>
+  <link rel="stylesheet" href="css/style.css" />
   <style>
     body, html {
       margin: 0;
@@ -19,7 +20,7 @@
       left: 0;
       height: 100%;
       width: 100%;
-      background: url('https://www.transparenttextures.com/patterns/stardust.png') no-repeat center center;
+      background: url('images/space_background.jpg') no-repeat center center;
       background-size: cover;
       z-index: 9999;
       display: flex;
@@ -49,19 +50,6 @@
       max-width: 600px;
     }
 
-    .icons-container {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-      margin-top: 20px;
-    }
-
-    .icon {
-      width: 60px;
-      height: 60px;
-    }
-
     #start-adventure {
       margin-top: 25px;
       padding: 15px 30px;
@@ -82,49 +70,14 @@
       position: absolute;
       top: 10px;
       right: 10px;
-      padding: 8px 12px;
+      padding: 6px 10px;
       border: none;
       background: #fff;
       color: #000;
       font-weight: bold;
       border-radius: 8px;
       cursor: pointer;
-    }
-
-    .project-link {
-      margin-top: 20px;
-      font-size: 1em;
-      color: #00ffff;
-    }
-
-    .project-link a {
-      color: #00ffff;
-      text-decoration: underline;
-    }
-
-    .movere-logo {
-      width: 150px;
-      margin-top: 20px;
-    }
-
-    @media (max-width: 600px) {
-      #cosmo-img {
-        width: 150px;
-      }
-
-      .icon {
-        width: 50px;
-        height: 50px;
-      }
-
-      #start-adventure {
-        padding: 10px 20px;
-        font-size: 1em;
-      }
-
-      .movere-logo {
-        width: 120px;
-      }
+      font-size: 0.9em;
     }
   </style>
 </head>
@@ -133,7 +86,7 @@
   <div id="overlay">
     <button id="language-toggle">🇮🇹 / 🇬🇧</button>
 
-    <img src="https://github.com/TizyM/COSMOpet/blob/main/a%20dog%20astronaut%20named%20COSMO.png" 
+    <img src="https://github.com/TizyM/COSMOpet/raw/main/a%20dog%20astronaut%20named%20COSMO.png" 
          alt="Cosmo the space dog" id="cosmo-img">
 
     <div class="speech-bubble">
@@ -146,25 +99,8 @@
       </p>
     </div>
 
-    <div class="icons-container">
-      <img src="https://github.com/TizyM/COSMOpet/blob/main/icon-space.png" alt="Explore space" class="icon">
-      <img src="https://github.com/TizyM/COSMOpet/blob/main/icon-music.png" alt="Musical games" class="icon">
-      <img src="https://github.com/TizyM/COSMOpet/blob/main/icon-relax.png" alt="Relaxing activities" class="icon">
-      <img src="https://github.com/TizyM/COSMOpet/blob/main/icon-food.png" alt="Healthy eating" class="icon">
-    </div>
-
     <h3>3, 2, 1... 🚀</h3>
     <button id="start-adventure">🌍 Start your adventure!</button>
-
-    <div class="project-link">
-      <img src="https://github.com/TizyM/COSMOpet/blob/main/Movere%202.0%20Logo.jpg" alt="Movere Logo" class="movere-logo">
-      <p>
-        CosmoPet is the prototype of <strong>Team Movere 2.0</strong> for the  
-        <a href="https://taikai.network/cassinihackathons/hackathons/space-for-healthcare/projects/cm8rvuu4f01r4c05hg4aoasqe/idea" 
-           target="_blank">Cassini Hackathon</a> 🚀
-        <br>For contacts: <a href="mailto:movereinsalus.project@gmail.com">movereinsalus.project@gmail.com</a>
-      </p>
-    </div>
   </div>
 
   <script>
