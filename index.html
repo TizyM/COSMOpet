@@ -1,36 +1,127 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CosmoPet - Il tuo assistente spaziale</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CosmoPet - Your Space Health Assistant</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: #000;
+      color: #fff;
+    }
+
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('https://www.transparenttextures.com/patterns/stardust.png');
+      background-size: cover;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #cosmo-img {
+      width: 200px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .speech-bubble {
+      background: rgba(255,255,255,0.1);
+      border: 2px dashed #fff;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 15px auto;
+      max-width: 600px;
+    }
+
+    .icons-container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .icon {
+      width: 60px;
+      height: 60px;
+    }
+
+    #start-adventure {
+      margin-top: 25px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background: #00bfff;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    #start-adventure:hover {
+      transform: scale(1.05);
+      background: #1ec8ff;
+    }
+
+    #language-toggle {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 8px 12px;
+      border: none;
+      background: #fff;
+      color: #000;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .project-link {
+      margin-top: 20px;
+      font-size: 1em;
+      color: #00ffff;
+    }
+
+    .project-link a {
+      color: #00ffff;
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
+  <div id="overlay">
+    <button id="language-toggle">🇮🇹 / 🇬🇧</button>
 
-    <!-- Overlay introduttivo -->
-<div id="overlay">
-  <div class="overlay-content">
-    <!-- Logo Movere (immagine diretta da GitHub) -->
-    <img src="https://github.com/TizyM/COSMOpet/raw/main/a%20dog%20astronaut%20named%20COSMO.png" alt="Cosmo il cane astronauta" id="cosmo-img">
-         alt="Logo Movere" class="logo-movere">
+    <img src="https://github.com/TizyM/COSMOpet/raw/main/a%20dog%20astronaut%20named%20COSMO.png" 
+         alt="Cosmo the space dog" id="cosmo-img">
 
-    <!-- Mascotte Cosmo (immagine animata) -->
-    <img src="https://github.com/TizyM/COSMOpet/blob/main/a%20dog%20astronaut%20named%20COSMO.png" 
-         alt="Cosmo il cane astronauta" id="cosmo-img">
-
-    <!-- Fumetto di Cosmo (messaggio ai bambini) -->
     <div class="speech-bubble">
-      <h2 id="overlay-title">Hi there! I'm COSMO, the AI space buddy of Team MOVERE! 🚀🐶</h2>
-      <p id="overlay-text">
-        Get ready for an **amazing space journey**! 🌌✨<br>
-        We'll play **fun musical games**, I'll teach you how to **relax**,  
-        and even how to **eat healthy** like astronauts! 🥦🚀  
-        Ready for the adventure? 3... 2... 1... GO! 🚀🔥  
+      <h2>Hi there! I'm COSMO, the AI space buddy of Team MOVERE! 🚀🐶</h2>
+      <p>
+        Get ready for an <strong>amazing space journey</strong>! 🌌✨<br>
+        We'll play <strong>fun musical games</strong>, I'll teach you how to <strong>relax</strong>,  
+        and even how to <strong>eat healthy</strong> like astronauts! 🥦🚀  
+        <br>Ready for the adventure? 3... 2... 1... GO! 🚀🔥  
       </p>
     </div>
 
-    <!-- Icone interattive (spazio, musica, relax, alimentazione) -->
     <div class="icons-container">
       <img src="https://github.com/TizyM/COSMOpet/blob/main/icon-space.png" alt="Explore space" class="icon">
       <img src="https://github.com/TizyM/COSMOpet/blob/main/icon-music.png" alt="Musical games" class="icon">
@@ -38,43 +129,27 @@
       <img src="https://github.com/TizyM/COSMOpet/blob/main/icon-food.png" alt="Healthy eating" class="icon">
     </div>
 
-    <!-- Conto alla rovescia e pulsante interattivo -->
-    <h3 id="countdown">3, 2, 1... 🚀</h3>
+    <h3>3, 2, 1... 🚀</h3>
     <button id="start-adventure">🌍 Start your adventure!</button>
-  </div>
-</div>
-    <header>
-        <button id="language-toggle">🇮🇹 / 🇬🇧</button>
-    </header>
 
-    <section class="hero">
-        <h1>Benvenuto nel mondo di CosmoPet!</h1>
-        <p>Un’avventura spaziale educativa per bambini e insegnanti.</p>
-        <img src="assets/cosmopet.png" alt="CosmoPet" id="cosmopet-img">
-    </section>
-
-    <nav>
-        <ul>
-            <li><a href="pages/quiz.html">🎮 Quiz & Giochi</a></li>
-            <li><a href="pages/chatbot.html">💬 Chatbot</a></li>
-            <li><a href="#">📜 Articoli Scientifici</a></li>
-        </ul>
-    </nav>
-
-    <script src="js/script.js"></script>
-<div style="text-align: center; margin-top: 20px;">
-    <img src="https://github.com/TizyM/COSMOpet/raw/main/Collage%20Salus%20Kids%2BPeT%20AI_20250327_225723.jpg" 
-         alt="Prototipo MOVERE 2.0 per Gara Cassini" 
-         style="width: 100%; max-width: 600px; height: auto; margin-bottom: 10px;">
-    <p style="font-size: 18px; font-weight: bold;">
+    <div class="project-link">
+      <p>
+        CosmoPet is the prototype of <strong>Team Movere 2.0</strong> for the  
         <a href="https://taikai.network/cassinihackathons/hackathons/space-for-healthcare/projects/cm8rvuu4f01r4c05hg4aoasqe/idea" 
-           target="_blank" 
-           style="text-decoration: none; color: inherit;">
-           Prototipo MOVERE 2.0 per Gara Cassini
-        </a>
-    </p>
-</div>
-    
+           target="_blank">Cassini Hackathon</a> 🚀
+        <br>For contacts: <a href="mailto:movereinsalus.project@gmail.com">movereinsalus.project@gmail.com</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("start-adventure").addEventListener("click", () => {
+      document.getElementById("overlay").style.display = "none";
+    });
+
+    document.getElementById("language-toggle").addEventListener("click", () => {
+      alert("Language toggle coming soon! 😄");
+    });
+  </script>
 </body>
 </html>
-
