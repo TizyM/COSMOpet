@@ -37,18 +37,15 @@ body, html {
 }
 
 .speech-bubble {
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px dashed #fff;
-  border-radius: 15px;
-  padding: 20px;
-  margin: 15px auto;
-  max-width: 600px;
+  max-width: 90%;
+  font-size: 0.85em;
+  padding: 10px;
 }
 
 #start-adventure {
   margin-top: 25px;
-  padding: 15px 30px;
-  font-size: 1.2em;
+  padding: 12px 24px;
+  font-size: 1.1em;
   background: #00bfff;
   color: white;
   border: none;
@@ -65,7 +62,7 @@ body, html {
 #language-toggle {
   position: fixed;
   top: 10px;
-  right: 10px;
+  right: 20px;
   padding: 6px 10px;
   border: none;
   background: #fff;
@@ -76,6 +73,34 @@ body, html {
   font-size: 0.9em;
   z-index: 10000;
 }
+
+@media (max-width: 600px) {
+  #language-toggle {
+    top: 5px;
+    right: 8px;
+    font-size: 0.75em;
+    padding: 4px 6px;
+  }
+}
+
+#movere-logo {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  z-index: 9999;
+}
+
+#movere-logo img {
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: transform 0.3s;
+}
+
+#movere-logo:hover img {
+  transform: scale(1.1);
+}
+
 
 /* ==== PAGINA PRINCIPALE ==== */
 header {
