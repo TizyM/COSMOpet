@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🥗 Nutrition – CosmoPet</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      padding: 20px;
+      background-color: #fffaf0;
+      color: #333;
+    }
+    header, footer {
+      text-align: center;
+      margin: 20px 0;
+    }
+    h1 {
+      color: #39874c;
+    }
+    .lang-switch {
+      text-align: right;
+      margin-bottom: 10px;
+    }
+    .content {
+      max-width: 800px;
+      margin: auto;
+    }
+    a.button {
+      padding: 10px 20px;
+      background: #39874c;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+      margin: 20px 0;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<div class="lang-switch">
+  <button onclick="switchLanguage()">🌐 Switch to Italian</button>
+</div>
+
+<header>
+  <h1 class="lang-en">🥗 Smart Nutrition and Environmental Health</h1>
+  <h1 class="lang-it" style="display:none;">🥗 Nutrizione Intelligente e Salute Ambientale</h1>
+</header>
+
+<div class="content">
+
+  <!-- ENGLISH VERSION -->
+  <div class="lang-en">
+    <p>
+      The Movere team is based in Sardinia, one of the world's Blue Zones – regions known for longevity, lifestyle, and healthy habits. Two of our researchers come from these communities, which inspired our nutrition concept in CosmoPet.
+    </p>
+    <p>
+      In CosmoPet, nutrition challenges are gamified and linked to seasonal, local, and healthy food suggestions. In future versions, we aim to cross-reference real-time environmental and agricultural satellite data from <strong>Copernicus Land Monitoring Services</strong>.
+    </p>
+    <ul>
+      <li>🍏 Children will receive weekly food quests aligned with Mediterranean diet principles.</li>
+      <li>📍 In the future, Galileo geolocation will adapt food suggestions to their region or city.</li>
+      <li>🌍 Integration with <a href="https://land.copernicus.eu/" target="_blank">Copernicus land cover maps</a> could offer insights into food availability and environmental sustainability.</li>
+    </ul>
+
+    <p><em>This feature is in early-alpha stage and under development for integration in 2025.</em></p>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Mediterranean_Diet_pyramid.svg/800px-Mediterranean_Diet_pyramid.svg.png" alt="Mediterranean Diet Pyramid">
+
+    <p>🔗 Learn more about the <a href="https://www.sardegnareporter.it/2024/07/gruppo-di-ricerca-osservatorio-sardinia-blue-zone-tiziana-mori-nominata-responsabile-comunicazione-rapporti-con-gli-enti-locali/633157/" target="_blank">Sardinia Blue Zone Research Group</a> that inspired our food challenges.</p>
+  </div>
+
+  <!-- ITALIAN VERSION -->
+  <div class="lang-it" style="display:none">
+    <p>
+      Il team Movere ha sede in Sardegna, una delle Blue Zones del mondo – aree note per la longevità e le abitudini sane. Due membri del nostro gruppo provengono da queste comunità, che ci hanno ispirato per la parte nutrizionale di CosmoPet.
+    </p>
+    <p>
+      In CosmoPet, le sfide alimentari sono gamificate e collegate a suggerimenti stagionali, locali e salutari. In futuro, prevediamo di incrociare questi dati con le informazioni satellitari <strong>Copernicus Land Monitoring Services</strong>.
+    </p>
+    <ul>
+      <li>🍏 I bambini riceveranno missioni alimentari settimanali ispirate alla dieta mediterranea.</li>
+      <li>📍 Grazie a Galileo, i suggerimenti potranno adattarsi alla posizione geografica.</li>
+      <li>🌍 L’integrazione con <a href="https://land.copernicus.eu/" target="_blank">le mappe Copernicus</a> potrà indicare la disponibilità locale e sostenibilità ambientale.</li>
+    </ul>
+
+    <p><em>Questa funzione è in fase alpha e sarà sviluppata nel 2025.</em></p>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Mediterranean_Diet_pyramid.svg/800px-Mediterranean_Diet_pyramid.svg.png" alt="Piramide Dieta Mediterranea">
+
+    <p>🔗 Approfondisci il <a href="https://www.sardegnareporter.it/2024/07/gruppo-di-ricerca-osservatorio-sardinia-blue-zone-tiziana-mori-nominata-responsabile-comunicazione-rapporti-con-gli-enti-locali/633157/" target="_blank">Gruppo di Ricerca Sardinia Blue Zone</a> che ha ispirato il nostro approccio.</p>
+  </div>
+
+  <a href="main.html" class="button">← Back to Home</a>
+</div>
+
+<footer>
+  <p><em>Movere 2.0 and COSMOPet are a conceptual prototype. For more information: movereinsalus.project@gmail.com</em></p>
+</footer>
+
+<script>
+function switchLanguage() {
+  const en = document.querySelectorAll('.lang-en');
+  const it = document.querySelectorAll('.lang-it');
+  en.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
+  it.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
+}
+</script>
+
+</body>
+</html>
