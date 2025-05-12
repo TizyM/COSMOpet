@@ -2,11 +2,43 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Mappa - CosmoPet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🗺️ Map – CosmoPet</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family: 'Arial', sans-serif; padding: 20px; background-color: #f9f9f9; color: #333; }
+    header, footer { text-align: center; margin: 20px 0; }
+    h1 { color: #004aad; }
+    .lang-switch { text-align: right; }
+    .content { max-width: 800px; margin: auto; }
+    a.button { padding: 10px 20px; background: #004aad; color: white; border-radius: 5px; text-decoration: none; }
+  </style>
 </head>
 <body>
-  <h1>Sezione Mappa</h1>
-  <p>Qui mostriamo l’uso della geolocalizzazione con Galileo per trovare aree verdi e centri terapeutici.</p>
-  <a href="main.html">Torna alla Home</a>
+
+<div class="lang-switch">
+  <a href="#" onclick="alert('Coming soon!');">🌐 English</a>
+</div>
+
+<header>
+  <h1>🗺️ Mappa Interattiva Satellitare</h1>
+</header>
+
+<div class="content">
+  <p>Questa sezione utilizza la geolocalizzazione <strong>Galileo/EGNOS</strong> e i dati <strong>Copernicus</strong> per:</p>
+  <ul>
+    <li>Mostrare zone con bassa copertura verde o alta esposizione all’inquinamento</li>
+    <li>Aiutare i bambini a trovare aree sicure e rilassanti per giocare</li>
+    <li>Geolocalizzare centri di musicoterapia e pet therapy vicini</li>
+  </ul>
+  <p>➡️ I dati sono aggiornati e visualizzati dinamicamente per attivare esperienze personalizzate all’interno di CosmoPet.</p>
+
+  <a href="main.html" class="button">Torna alla Home</a>
+</div>
+
+<footer>
+  <p><em>Movere 2.0 and COSMOPet are a conceptual prototype. For more information: movereinsalus.project@gmail.com</em></p>
+</footer>
+
 </body>
 </html>
