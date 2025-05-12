@@ -2,12 +2,76 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <title>Salute - CosmoPet</title>
-  <link rel="stylesheet" href="style.css"> <!-- Se hai un CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🩺 Health – CosmoPet</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      padding: 20px;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+    header, footer {
+      text-align: center;
+      margin: 20px 0;
+    }
+    h1 {
+      color: #0c5fa0;
+    }
+    .lang-switch {
+      text-align: right;
+    }
+    .content {
+      max-width: 800px;
+      margin: auto;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    a.button {
+      padding: 10px 20px;
+      background: #0c5fa0;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-  <h1>Sezione Salute</h1>
-  <p>Questa sezione spiega come i dati satellitari di Copernicus ci aiutano a personalizzare la pet therapy in base alla qualità dell’aria, presenza di verde urbano e fattori ambientali.</p>
-  <a href="main.html">Torna alla Home</a>
+
+<div class="lang-switch">
+  <a href="#" onclick="alert('English version coming soon!');">🌐 English</a>
+</div>
+
+<header>
+  <h1>🩺 Sezione Salute Mentale</h1>
+</header>
+
+<div class="content">
+  <p>
+    CosmoPet utilizza <strong>i dati satellitari del programma Copernicus</strong> per monitorare in tempo reale fattori ambientali che influenzano il benessere mentale dei bambini.
+  </p>
+  <ul>
+    <li>🌫️ Rilevamento di NO₂, PM10 e isole di calore urbane tramite Sentinel-4</li>
+    <li>🌳 Mappatura della copertura verde grazie a HR-VPP</li>
+    <li>⚠️ Notifiche automatiche se l’ambiente è considerato ad alto rischio per ansia o stress</li>
+  </ul>
+
+  <p>
+    Questi dati vengono elaborati tramite <strong>intelligenza artificiale</strong> per personalizzare la pet therapy e la musicoterapia offerte all’interno dell’app.
+  </p>
+
+  <p>
+    Se l’inquinamento è alto o lo stress ambientale è elevato, la mascotte CosmoPet guida il bambino verso comportamenti calmanti: pause musicali, esercizi di respirazione o giochi rilassanti.
+  </p>
+
+  <a href="main.html" class="button">Torna alla Home</a>
+</div>
+
+<footer>
+  <p><em>Movere 2.0 and COSMOPet are a conceptual prototype. For more information: movereinsalus.project@gmail.com</em></p>
+</footer>
+
 </body>
 </html>
