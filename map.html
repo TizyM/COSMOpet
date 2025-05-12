@@ -1,44 +1,138 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>🗺️ Map – CosmoPet</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    body { font-family: 'Arial', sans-serif; padding: 20px; background-color: #f9f9f9; color: #333; }
-    header, footer { text-align: center; margin: 20px 0; }
-    h1 { color: #004aad; }
-    .lang-switch { text-align: right; }
-    .content { max-width: 800px; margin: auto; }
-    a.button { padding: 10px 20px; background: #004aad; color: white; border-radius: 5px; text-decoration: none; }
+    body {
+      font-family: 'Arial', sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header, footer {
+      text-align: center;
+      margin: 20px 0;
+    }
+    h1 {
+      color: #004aad;
+    }
+    .lang-switch {
+      text-align: right;
+      margin-bottom: 10px;
+    }
+    .content {
+      max-width: 800px;
+      margin: auto;
+    }
+    .interactive-box {
+      background-color: #eef4ff;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 20px;
+      border: 1px solid #ccc;
+    }
+    a.button {
+      padding: 10px 20px;
+      background: #004aad;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    img {
+      max-width: 100%;
+      border: 1px solid #ccc;
+      margin: 20px 0;
+    }
   </style>
 </head>
 <body>
 
 <div class="lang-switch">
-  <a href="#" onclick="alert('Coming soon!');">🌐 English</a>
+  <button onclick="switchLanguage()">🌐 Switch to Italian</button>
 </div>
 
 <header>
-  <h1>🗺️ Mappa Interattiva Satellitare</h1>
+  <h1 class="lang-en">🗺️ Satellite Map and Environmental Insights</h1>
+  <h1 class="lang-it" style="display:none;">🗺️ Mappa Satellitare e Dati Ambientali</h1>
 </header>
 
 <div class="content">
-  <p>Questa sezione utilizza la geolocalizzazione <strong>Galileo/EGNOS</strong> e i dati <strong>Copernicus</strong> per:</p>
-  <ul>
-    <li>Mostrare zone con bassa copertura verde o alta esposizione all’inquinamento</li>
-    <li>Aiutare i bambini a trovare aree sicure e rilassanti per giocare</li>
-    <li>Geolocalizzare centri di musicoterapia e pet therapy vicini</li>
-  </ul>
-  <p>➡️ I dati sono aggiornati e visualizzati dinamicamente per attivare esperienze personalizzate all’interno di CosmoPet.</p>
 
-  <a href="main.html" class="button">Torna alla Home</a>
+  <!-- ENGLISH -->
+  <div class="lang-en">
+    <p>
+      In CosmoPet, we use real satellite data to understand how the urban environment affects children's well-being.
+    </p>
+    <ul>
+      <li>📍 <strong>Galileo geolocation</strong> helps identify the child’s position</li>
+      <li>🌫️ <strong>Sentinel-4</strong> detects air quality and pollution</li>
+      <li>🌳 <strong>HR-VPP</strong> maps vegetation and green access</li>
+    </ul>
+
+    <div class="interactive-box">
+      <strong>Example – Environmental Snapshot:</strong><br>
+      <em>Location: Milan<br>
+      NO₂ level: High<br>
+      Green areas nearby: Low<br>
+      Suggestion: Activate relaxing pet interaction + breathing game</em><br>
+      <small>(Function in alpha – simulation only)</small>
+    </div>
+
+    <p>
+      This section will evolve into a real-time interactive tool based on <a href="https://land.copernicus.eu/" target="_blank">Copernicus</a> and <a href="https://www.usegalileo.eu/EN/" target="_blank">Galileo</a> APIs.
+    </p>
+
+    <p><em>CosmoPet is currently in early-alpha stage. Features shown are part of an ongoing prototype.</em></p>
+  </div>
+
+  <!-- ITALIAN -->
+  <div class="lang-it" style="display:none">
+    <p>
+      In CosmoPet utilizziamo dati satellitari per comprendere come l’ambiente urbano incida sul benessere dei bambini.
+    </p>
+    <ul>
+      <li>📍 La <strong>geolocalizzazione Galileo</strong> aiuta a identificare la posizione del bambino</li>
+      <li>🌫️ <strong>Sentinel-4</strong> rileva qualità dell’aria e inquinamento</li>
+      <li>🌳 <strong>HR-VPP</strong> mappa la copertura vegetale e gli spazi verdi</li>
+    </ul>
+
+    <div class="interactive-box">
+      <strong>Esempio – Istante ambientale:</strong><br>
+      <em>Posizione: Milano<br>
+      Livello NO₂: Alto<br>
+      Aree verdi vicine: Poche<br>
+      Suggerimento: Attivare interazione calmante con pet + gioco di respirazione</em><br>
+      <small>(Funzione in fase alpha – simulazione)</small>
+    </div>
+
+    <p>
+      Questa sezione sarà presto una mappa interattiva reale grazie alle API <a href="https://land.copernicus.eu/" target="_blank">Copernicus</a> e <a href="https://www.usegalileo.eu/EN/" target="_blank">Galileo</a>.
+    </p>
+
+    <p><em>CosmoPet è attualmente in fase alpha. Le funzioni mostrate sono parte del prototipo in sviluppo.</em></p>
+  </div>
+
+  <a href="main.html" class="button">← Back to Home</a>
+
 </div>
 
 <footer>
   <p><em>Movere 2.0 and COSMOPet are a conceptual prototype. For more information: movereinsalus.project@gmail.com</em></p>
 </footer>
+
+<script>
+function switchLanguage() {
+  const en = document.querySelectorAll('.lang-en');
+  const it = document.querySelectorAll('.lang-it');
+  en.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
+  it.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
+}
+</script>
 
 </body>
 </html>
