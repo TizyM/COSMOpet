@@ -80,7 +80,7 @@
 <body>
 
 <div class="lang-switch">
-  <a href="#" onclick="switchLanguage()">🇮🇹 Translate to Italian</a>
+  <a href="#" id="lang-toggle" onclick="toggleLanguage()">🇮🇹 Visualizza in Italiano</a>
 </div>
 
 <img src="pet%20therapy%20%2B%20pet-guard.png" alt="Pet Therapy and Pet Guard" class="header-image">
@@ -140,12 +140,108 @@
 </footer>
 
 <script>
-  function switchLanguage() {
+  let isItalian = false;
+
+  function toggleLanguage() {
     const contentArea = document.getElementById('content-area');
-    const italianContent = `...`; // Traduzione italiana mantenuta
-    contentArea.innerHTML = italianContent;
+    const langToggle = document.getElementById('lang-toggle');
+
+    if (!isItalian) {
+      // CONTENUTO IN ITALIANO
+      contentArea.innerHTML = `
+        <p>CosmoPet utilizza <strong>i dati satellitari Copernicus</strong> per monitorare in tempo reale le condizioni ambientali che influenzano la salute mentale dei bambini.</p>
+        <ul>
+          <li>🌫️ Rilevamento di NO₂, PM10 e isole di calore urbane tramite Sentinel-4</li>
+          <li>🌳 Mappatura degli spazi verdi con HR-VPP</li>
+          <li>⚠️ Avvisi in caso di ambiente ad alto rischio per ansia o stress</li>
+        </ul>
+
+        <p>Questi dati vengono elaborati da <strong>intelligenza artificiale</strong> per personalizzare la pet therapy e la musicoterapia nell'app.</p>
+
+        <div class="example-box">
+          <strong>Confronto ambientale – 🇮🇹 Napoli vs 🇬🇷 Atene:</strong><br><br>
+          <u><strong>🇮🇹 Napoli, Italia</strong></u><br>
+          - Alti livelli di NO₂ nelle aree urbane<br>
+          - Disponibilità moderata di spazi verdi<br>
+          - <em>L’IA attiva musica per concentrazione + promemoria idratazione</em><br><br>
+
+          <u><strong>🇬🇷 Atene, Grecia</strong></u><br>
+          - NO₂ elevato + isole di calore<br>
+          - Bassa disponibilità di verde per bambino<br>
+          - <em>L’IA suggerisce esercizi di respirazione + musicoterapia calmante</em><br><br>
+
+          <small>Questo esempio mostra come i dati locali attivano interventi adattivi in tempo reale. Movere 2.0 è un progetto pilota in Italia, ma scalabile e replicabile in Europa.</small>
+        </div>
+
+        <p>
+          In caso di stress ambientale, la mascotte COSMOPet invita il bambino a rallentare, ad ascoltare suoni rilassanti o a svolgere esercizi di respirazione.
+        </p>
+
+        <div class="info-row">
+          <div class="explanation-box" style="flex: 1;">
+            <strong>💡 Come funziona:</strong><br>
+            <em>Input rilevato</em> → Rumore eccessivo, movimento brusco, frequenza cardiaca elevata (se i sensori sono disponibili).<br>
+            <em>Trigger</em> → Superamento della soglia di stress.<br>
+            <em>Output</em> → La mascotte COSMOPet invita delicatamente e interattivamente il bambino a rilassarsi con suggerimenti calmanti.
+          </div>
+          <div style="flex: 1; text-align: center;">
+            <img src="mockup-IT.png" alt="Mockup COSMOPet Italiano" style="max-width: 100%; border-radius: 10px;">
+          </div>
+        </div>
+        <a href="main.html" class="button">← Torna alla Home</a>
+      `;
+      langToggle.innerHTML = "🇬🇧 Switch to English";
+      isItalian = true;
+    } else {
+      // CONTENUTO IN INGLESE
+      contentArea.innerHTML = `
+        <p>CosmoPet uses <strong>Copernicus satellite data</strong> to monitor real-time environmental conditions that influence children's mental health.</p>
+        <ul>
+          <li>🌫️ Detection of NO₂, PM10, and urban heat islands via Sentinel-4</li>
+          <li>🌳 Green space mapping using HR-VPP</li>
+          <li>⚠️ Alerts when environment is high-risk for anxiety or stress</li>
+        </ul>
+
+        <p>These data are processed by <strong>artificial intelligence</strong> to personalize pet therapy and music therapy inside the app.</p>
+
+        <div class="example-box">
+          <strong>Environmental Comparison – 🇮🇹 Naples vs 🇬🇷 Athens:</strong><br><br>
+          <u><strong>🇮🇹 Naples, Italy</strong></u><br>
+          - High NO₂ levels in urban areas<br>
+          - Moderate green space availability<br>
+          - <em>AI triggers focus music + hydration reminder</em><br><br>
+
+          <u><strong>🇬🇷 Athens, Greece</strong></u><br>
+          - High NO₂ + heat islands<br>
+          - Low green space per child<br>
+          - <em>AI suggests breathing game + calming music therapy</em><br><br>
+
+          <small>This example shows how local data can activate real-time adaptive interventions. Movere 2.0 is a pilot project in Italy, but scalable and replicable across Europe.</small>
+        </div>
+
+        <p>
+          If environmental stress is high, the COSMOPet mascot invites the child to slow down, listen to relaxing sounds, or perform breathing exercises.
+        </p>
+
+        <div class="info-row">
+          <div class="explanation-box" style="flex: 1;">
+            <strong>💡 How it works:</strong><br>
+            <em>Input detected</em> → Excessive noise, abrupt movement, elevated heart rate (if sensors are available).<br>
+            <em>Trigger</em> → Stress threshold exceeded.<br>
+            <em>Output</em> → The COSMOPet mascot gently and interactively invites the child to relax with calming suggestions.
+          </div>
+          <div style="flex: 1; text-align: center;">
+            <img src="mockup-en.png" alt="COSMOPet Mockup" style="max-width: 100%; border-radius: 10px;">
+          </div>
+        </div>
+        <a href="main.html" class="button">← Back to Home</a>
+      `;
+      langToggle.innerHTML = "🇮🇹 Visualizza in Italiano";
+      isItalian = false;
+    }
   }
 </script>
+
 
 </body>
 </html>
