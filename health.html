@@ -1,152 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Space-Enhanced Health - COSMOPet</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🩺 Health – CosmoPet</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    /* Stili in linea per garantire responsività e buon contrasto */
     body {
-      background-color: #E6E6FA; /* Sfondo lavanda rilassante */
-      font-family: Arial, sans-serif;
-      color: #222;
-      margin: 20px;
+      font-family: 'Arial', sans-serif;
       padding: 20px;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+    header, footer {
       text-align: center;
+      margin: 20px 0;
     }
-    .header-img-container {
-      width: 100%;
-      text-align: center;
-      margin-bottom: 20px;
+    h1 {
+      color: #0c5fa0;
     }
-    .header-img {
-      max-width: 90%;
-      height: auto;
+    .lang-switch {
+      text-align: right;
     }
-    section {
-      margin-bottom: 30px;
+    .content {
+      max-width: 800px;
+      margin: auto;
     }
-    table {
-      margin: 0 auto;
-      border-collapse: collapse;
+    ul {
+      margin-left: 20px;
     }
-    table, th, td {
-      border: 1px solid #444;
-    }
-    th, td {
-      padding: 8px 12px;
-      text-align: center;
-    }
-    a {
-      color: #1A237E; /* Blu scuro per buona leggibilità */
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    button {
-      background-color: #007bff;
+    a.button {
+      padding: 10px 20px;
+      background: #0c5fa0;
       color: white;
-      padding: 10px 15px;
-      border: none;
       border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #0056b3;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <header>
-    <!-- Header: immagine in alto caricata dal link raw fornito -->
-    <div class="header-img-container">
-      <img src="https://raw.githubusercontent.com/TizyM/COSMOpet/main/pet%20therapy%20%2B%20pet-guard.png" alt="Pet Therapy & Health" class="header-img">
-    </div>
-    <h1>Space-Enhanced Health & Pet Therapy</h1>
-    <button onclick="translatePage()">🇮🇹 Translate to Italian</button>
-  </header>
-  
-  <section>
-    <h2>Problem & Context</h2>
-    <p>Urban environments present significant challenges for well-being—with rising pollution and stress levels among residents. Children, in particular, suffer from the lack of green spaces, increasing stress and contributing to various health issues.</p>
-  </section>
-  
-  <section>
-    <h2>Our Solution</h2>
-    <p>COSMOPet leverages satellite data from Copernicus and Galileo to identify urban areas with environmental stress and limited green space. By integrating pet therapy techniques, we aim to reduce stress and enhance overall health in metropolitan communities.</p>
-  </section>
-  
-  <section>
-    <h2>Data Insights</h2>
-    <p>We utilize environmental metrics to compare key indicators across cities. Below is an illustrative table:</p>
-    <table>
-      <tr>
-        <th>City</th>
-        <th>Green Coverage</th>
-        <th>Pollution (NO₂)</th>
-        <th>Stress Index</th>
-      </tr>
-      <tr>
-        <td>Cagliari, Italy</td>
-        <td>35%</td>
-        <td>Moderate</td>
-        <td>High</td>
-      </tr>
-      <tr>
-        <td>Florence, Italy</td>
-        <td>42%</td>
-        <td>Low</td>
-        <td>Medium</td>
-      </tr>
-      <tr>
-        <td>Verona, Italy</td>
-        <td>30%</td>
-        <td>High</td>
-        <td>High</td>
-      </tr>
-      <tr>
-        <td>Aarhus, Denmark</td>
-        <td>50%</td>
-        <td>Low</td>
-        <td>Low</td>
-      </tr>
-      <tr>
-        <td>Vilnius, Lithuania</td>
-        <td>45%</td>
-        <td>Moderate</td>
-        <td>Medium</td>
-      </tr>
-      <tr>
-        <td>Berlin, Germany</td>
-        <td>38%</td>
-        <td>High</td>
-        <td>High</td>
-      </tr>
-    </table>
-  </section>
-  
-  <section>
-    <h2>Impact & Benefits</h2>
-    <p>Our integrated approach delivers multiple advantages:</p>
-    <ul style="list-style: none; padding: 0;">
-      <li>✅ Reduced stress and improved well-being</li>
-      <li>✅ Enhanced access to green spaces</li>
-      <li>✅ Better cognitive function in children</li>
+
+<div class="lang-switch">
+  <a href="#" onclick="alert('English version coming soon!');">🌐 English</a>
+</div>
+
+<header>
+  <h1>🩺 Sezione Salute Mentale</h1>
+</header>
+
+<div class="content">
+
+  <!-- English content -->
+  <div class="lang-en">
+    <p>CosmoPet uses <strong>Copernicus satellite data</strong> to monitor real-time environmental conditions that influence children's mental health.</p>
+    <ul>
+      <li>🌫️ Detection of NO₂, PM10, and urban heat islands via Sentinel-4</li>
+      <li>🌳 Green space mapping using HR-VPP</li>
+      <li>⚠️ Alerts when environment is high-risk for anxiety or stress</li>
     </ul>
-  </section>
-  
-  <footer>
-    <p>Contact: movereinsalus.project@gmail.com</p>
-    <button onclick="window.location.href='index.html'">🔙 Back to Main Menu</button>
-  </footer>
-  
-  <script>
-    function translatePage() {
-      // Assicurati che il file "health_it.html" esista per la versione italiana
-      window.location.href = "health_it.html";
-    }
-  </script>
+
+    <p>
+      These data are processed by <strong>artificial intelligence</strong> to personalize pet therapy and music therapy inside the app.
+    </p>
+
+    <div class="example-box">
+      <strong>Environmental Comparison – 🇮🇹 Naples vs 🇬🇷 Athens:</strong><br><br>
+      <u><strong>🇮🇹 Naples, Italy</strong></u><br>
+      - High NO₂ levels in urban areas<br>
+      - Moderate green space availability<br>
+      - <em>AI triggers focus music + hydration reminder</em><br><br>
+      
+      <u><strong>🇬🇷 Athens, Greece</strong></u><br>
+      - High NO₂ + heat islands<br>
+      - Low green space per child<br>
+      - <em>AI suggests breathing game + calming music therapy</em><br><br>
+
+      <small>This example shows how local data can activate real-time adaptive interventions. Movere 2.0 is a pilot project in Italy, but scalable and replicable across Europe.</small>
+    </div>
+
+    <p>
+      If environmental stress is high, the COSMOPet mascot invites the child to slow down, listen to relaxing sounds, or perform breathing exercises.
+    </p>
+  </div>
+
+  <!-- Italian content -->
+  <div class="lang-it" style="display:none;">
+    <p>CosmoPet utilizza <strong>i dati satellitari Copernicus</strong> per monitorare in tempo reale le condizioni ambientali che influenzano la salute mentale dei bambini.</p>
+    <ul>
+      <li>🌫️ Rilevamento di NO₂, PM10 e isole di calore tramite Sentinel-4</li>
+      <li>🌳 Mappatura della copertura verde con HR-VPP</li>
+      <li>⚠️ Notifiche automatiche in caso di rischio ambientale elevato</li>
+    </ul>
+
+    <p>
+      Questi dati vengono elaborati da un sistema di <strong>intelligenza artificiale</strong> per personalizzare le terapie proposte nell’app.
+    </p>
+
+    <div class="example-box">
+      <strong>Confronto ambientale – 🇮🇹 Napoli vs 🇬🇷 Atene:</strong><br><br>
+      <u><strong>🇮🇹 Napoli, Italia</strong></u><br>
+      - Alti livelli di NO₂ nelle aree urbane<br>
+      - Disponibilità moderata di verde<br>
+      - <em>L’IA propone musica per concentrazione + promemoria idratazione</em><br><br>
+      
+      <u><strong>🇬🇷 Atene, Grecia</strong></u><br>
+      - NO₂ elevato + isole di calore<br>
+      - Poco verde disponibile per bambino<br>
+      - <em>L’IA suggerisce gioco di respirazione + musicoterapia rilassante</em><br><br>
+
+      <small>Questo esempio mostra come i dati locali attivano interventi adattivi in tempo reale. Movere 2.0 è un progetto pilota in Italia, ma scalabile e replicabile in Europa.</small>
+    </div>
+
+    <p>
+      In caso di stress ambientale, la mascotte guida il bambino verso contenuti rilassanti e attività di respirazione o ascolto sonoro.
+    </p>
+  </div>
+
+  <a href="main.html" class="button">← Back to Home</a>
+</div>
+
+
+  <p>
+    Questi dati vengono elaborati tramite <strong>intelligenza artificiale</strong> per personalizzare la pet therapy e la musicoterapia offerte all’interno dell’app.
+  </p>
+
+  <p>
+    Se l’inquinamento è alto o lo stress ambientale è elevato, la mascotte CosmoPet guida il bambino verso comportamenti calmanti: pause musicali, esercizi di respirazione o giochi rilassanti.
+  </p>
+
+  <a href="main.html" class="button">Torna alla Home</a>
+</div>
+
+<footer>
+  <p><em>Movere 2.0 and COSMOPet are a conceptual prototype. For more information: movereinsalus.project@gmail.com</em></p>
+</footer>
+
 </body>
 </html>
