@@ -2,92 +2,161 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>🌍 European Comparison – CosmoPet</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movere 2.0 – Space-Enhanced Pet Therapy with CosmoPet app</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #002b45;
+      margin: 0;
       padding: 20px;
-      background-color: #fefefe;
-      color: #333;
+      color: #f0f0f0;
     }
-    header, footer {
+    header {
       text-align: center;
-      margin: 20px 0;
+      margin-bottom: 30px;
     }
-    h1 {
-      color: #005fa3;
+    header h1 {
+      color: #00c2ff;
+      font-size: 2.5em;
+    }
+    header h3 {
+      font-weight: normal;
+      color: #b0dff7;
+      margin-top: -10px;
     }
     .lang-switch {
       text-align: right;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
     .content {
-      max-width: 850px;
+      max-width: 900px;
       margin: auto;
+      background: #003a5c;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
     }
-    img {
-      max-width: 100%;
+    h2 {
+      color: #00c2ff;
+    }
+    p {
+      line-height: 1.8;
+    }
+    .highlight, .frame {
+      background-color: #004e74;
+      padding: 15px;
+      border-left: 5px solid #00c2ff;
       margin: 20px 0;
-      border: 1px solid #ccc;
+      border-radius: 6px;
     }
-    a.button {
+    .frame {
+      border-left: none;
+      border: 2px dashed #00c2ff;
+      font-style: italic;
+      color: #c8ebff;
+    }
+    .cta {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 30px;
+      background-color: #00415e;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .cta img {
+      width: 60px;
+      height: auto;
+      border-radius: 8px;
+    }
+    .cta p {
+      margin: 0;
+    }
+    .landing {
+      background: linear-gradient(145deg, #005f8e, #003e5f);
+      color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: 40px;
+      box-shadow: 0 0 20px rgba(0, 194, 255, 0.5);
+    }
+    .landing h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .landing p {
+      font-size: 1.1em;
+      margin: 10px 0;
+    }
+    .landing a {
+      display: inline-block;
+      margin-top: 15px;
+      background: #00c2ff;
+      color: #002b45;
       padding: 10px 20px;
-      background: #005fa3;
-      color: white;
       border-radius: 5px;
       text-decoration: none;
-      display: inline-block;
-      margin-top: 20px;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+    @media (max-width: 600px) {
+      .cta {
+        flex-direction: column;
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
-
-<div class="lang-switch">
-  <button onclick="switchLanguage()">🌐 Switch to Italian</button>
-</div>
-
-<header>
-  <h1 class="lang-en">🌍 Child Health Across Europe: Why We Need CosmoPet</h1>
-  <h1 class="lang-it" style="display:none;">🌍 Salute infantile in Europa: perché serve CosmoPet</h1>
-</header>
-
-<div class="content">
-
-  <!-- ENGLISH -->
-  <div class="lang-en">
-    <p>Childhood overweight and obesity rates vary significantly across Europe. According to WHO and EU data, Italy, Greece, and Romania show the highest incidence.</p>
-
-    <img src="europe_child_obesity_comparison.png" alt="Child Obesity Comparison Chart">
-
-    <p>
-      Movere 2.0 was born in Italy 🇮🇹, where <strong>29% of children</strong> are overweight or obese. In Greece 🇬🇷, that rate reaches <strong>38.5%</strong>.
-    </p>
-
-    <p>
-      Our platform, CosmoPet, is designed to address these numbers by using satellite data and personalized digital therapy. While tested as a pilot in Italy, its <strong>modular, scalable model</strong> makes it suitable for all countries listed above.
-    </p>
-
-    <p>
-      Thanks to the integration of <a href="https://land.copernicus.eu/" target="_blank">Copernicus Land Monitoring</a> and <a href="https://www.usegalileo.eu/" target="_blank">Galileo GNSS</a>, CosmoPet can adapt to urban environmental contexts in cities like Athens 🇬🇷, Bucharest 🇷🇴, or Paris 🇫🇷.
-    </p>
+  <div class="lang-switch">
+    <a href="#" id="lang-toggle" onclick="toggleLanguage()">🇮🇹 Visualizza in Italiano</a>
   </div>
 
-  <!-- ITALIANO -->
-  <div class="lang-it" style="display:none;">
-    <p>I tassi di sovrappeso e obesità infantile variano molto in Europa. Secondo dati OMS e UE, Italia, Grecia e Romania registrano le incidenze più alte.</p>
+  <header>
+    <h1>🌍 Movere 2.0 – Space-Enhanced Pet Therapy with CosmoPet app</h1>
+    <h3>by T. Mori, Ph.D – Team Leader Movere 2.0 Project</h3>
+  </header>
 
-    <img src="europe_child_obesity_comparison.png" alt="Grafico Obesità Infantile Europa">
+  <div class="content" id="content-area">
+    <!-- Il contenuto verrà caricato dinamicamente in base alla lingua scelta -->
+  </div>
 
-    <p>
-      Movere 2.0 è nato in Italia 🇮🇹, dove <strong>il 29% dei bambini</strong> è in sovrappeso o obeso. In Grecia 🇬🇷, si arriva al <strong>38.5%</strong>.
-    </p>
+  <footer>
+    <p>Contact: movereinsalus.project@gmail.com (Referent: Tiziana Mori)</p>
+  </footer>
 
-    <p>
-      La nostra piattaforma CosmoPet è pensata per contrastare questi numeri attraverso l’uso di dati satellitari e terapie digitali personalizzate. Pur essendo un <strong>progetto pilota in Italia</strong>, il suo modello modulare è <strong>replicabile</strong> negli altri paesi.
-    </p>
+  <script>
+    let isItalian = false;
 
-    <p>
-      Grazie all’integrazione con <a href="https://
+    function toggleLanguage() {
+      const contentArea = document.getElementById('content-area');
+      const langToggle = document.getElementById('lang-toggle');
+      if (!isItalian) {
+        localStorage.setItem('preferredLang', 'it');
+        // contenuto italiano inserito qui
+      } else {
+        localStorage.setItem('preferredLang', 'en');
+        // contenuto inglese inserito qui
+      }
+    }
+
+    window.onload = () => {
+      const savedLang = localStorage.getItem('preferredLang');
+      if (savedLang === 'it') {
+        isItalian = false;
+        toggleLanguage();
+      } else {
+        isItalian = true;
+        toggleLanguage();
+      }
+    }
+  </script>
+</body>
+</html>
