@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Movere 2.0 – Space-Enhanced Pet Therapy with CosmoPet app</title>
   <style>
     body {
@@ -125,7 +125,7 @@
   </header>
 
   <div class="content" id="content-area">
-    <!-- Il contenuto verrà caricato dinamicamente in base alla lingua scelta -->
+    <!-- Contenuto dinamico caricato da JavaScript -->
   </div>
 
   <footer>
@@ -140,10 +140,45 @@
       const langToggle = document.getElementById('lang-toggle');
       if (!isItalian) {
         localStorage.setItem('preferredLang', 'it');
-        // contenuto italiano inserito qui
+        contentArea.innerHTML = `
+          <h2>🌍 Pediatric Health Challenges Across Europe</h2>
+          <p>Childhood obesity, stress, and mental health issues are rising concerns across the European Union. According to WHO and EU data, countries like Italy, Greece, and Romania report some of the highest rates of childhood overweight and anxiety disorders. In Italy, over 29% of children are overweight or obese. In Greece, this number rises to 38.5%.</p>
+          <div class="highlight"><strong>Movere 2.0</strong> is an Italian-born pilot initiative that combines <strong>space data</strong>, <strong>digital therapy</strong>, and <strong>behavioral science</strong> to support children’s mental and emotional wellbeing.</div>
+          <p>At its core is the <strong>COSMOPet app</strong>, a smart, engaging platform where a virtual therapy pet interacts with children using:</p>
+          <ul>
+            <li>🛰️ Real-time satellite data (Copernicus, Galileo)</li>
+            <li>🎧 Adaptive music therapy</li>
+            <li>🐾 AI-driven behavioral support</li>
+            <li>🌿 Environmental analysis at local scale</li>
+          </ul>
+          <h2>🌍 Adaptability and Replicability</h2>
+          <p>Movere 2.0 was developed in Naples but is <strong>modular and scalable</strong> to other European contexts like Athens 🇬🇷, Bucharest 🇷🇴, Vilnius 🇱🇹, and Paris 🇫🇷. Each deployment reflects local cultural, linguistic, and environmental needs.</p>
+          <h2>🤝 A Strong Multi-Sector Network</h2>
+          <p>Active partnerships include:</p>
+          <ul>
+            <li>👩‍⚕️ Pediatricians, psychologists, veterinarians</li>
+            <li>🏫 Schools, municipalities, and social services</li>
+            <li>🎼 Music academies and third-sector associations</li>
+          </ul>
+          <div class="frame">“We don’t just monitor air quality. We help children breathe easier, feel safer, and grow stronger—wherever they live.”</div>
+          <div class="frame">“What works in Naples can work in Vilnius, Skopje, or Bucharest. The model adapts. The mission remains.”</div>
+          <div class="cta">
+            <img src="Movere%202.0%20Logo.jpg" alt="Movere Logo">
+            <p><strong>Interested in joining our mission?</strong><br>Movere 2.0 is ready for partnerships across Europe. Let’s co-design local solutions for children’s wellbeing.</p>
+          </div>
+          <div class="landing">
+            <h2>🚀 Get Involved with Movere 2.0</h2>
+            <p>Would you like to bring COSMOPet to your city or region?</p>
+            <p>We are open to collaborations with schools, municipalities, research groups and NGOs.</p>
+            <p>📧 Contact us: <strong>movereinsalus.project@gmail.com</strong></p>
+            <a href="index.html">← Back to COSMOPet Main Menu</a>
+          </div>
+        `;
+        langToggle.innerHTML = "🇬🇧 View in English";
+        isItalian = true;
       } else {
         localStorage.setItem('preferredLang', 'en');
-        // contenuto inglese inserito qui
+        location.reload(); // reload to restore English by default
       }
     }
 
@@ -152,11 +187,8 @@
       if (savedLang === 'it') {
         isItalian = false;
         toggleLanguage();
-      } else {
-        isItalian = true;
-        toggleLanguage();
       }
-    }
+    };
   </script>
 </body>
 </html>
