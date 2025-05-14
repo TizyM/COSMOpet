@@ -1,96 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chant Therapy - MOVERE 2.0</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chant Therapy - MOVERE 2.0</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Stili per la pagina Cantoterapia */
+    body {
+      background-color: #E6E6FA; /* Lavanda rilassante */
+      font-family: Arial, sans-serif;
+      color: #222; /* Testo scuro per garantire il contrasto */
+      margin: 20px;
+      padding: 20px;
+      text-align: center;
+    }
+    .header-img-container {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .header-img {
+      max-width: 80%;
+      height: auto;
+    }
+    table {
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid #444;
+    }
+    th, td {
+      padding: 8px;
+      text-align: center;
+    }
+    a {
+      color: #1A237E; /* Blu scuro per buon contrasto */
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Chant Therapy and Satellite Data</h1>
-        <button onclick="translatePage()">🇮🇹 Translate to Italian</button>
-    </header>
-    
-    <section>
-        <h2>What is Chant Therapy?</h2>
-        <p>Chant therapy is a scientifically backed technique that uses vocal sounds and melodies to enhance emotional and physical well-being. Studies show that structured vocal exercises can improve cognitive function, reduce stress, and enhance social interaction.</p>
-    </section>
-    
-    <section>
-        <h2>Satellite Data and Urban Well-being</h2>
-        <p>Using Copernicus and Galileo satellite data, MOVERE 2.0 identifies urban areas with high environmental stress and limited access to green spaces. This allows us to map optimal locations for chant therapy interventions.</p>
-    </section>
+  <header>
+    <!-- Sezione dell'immagine in alto -->
+    <div class="header-img-container">
+      <img src="CantoTerapia_Movere-CosmoPet.png" alt="Chant Therapy" class="header-img">
+    </div>
+    <h1>Chant Therapy and Satellite Data</h1>
+    <button onclick="translatePage()">🇮🇹 Translate to Italian</button>
+  </header>
+  
+  <section>
+    <h2>What is Chant Therapy?</h2>
+    <p>Chant therapy is a scientifically backed technique that uses vocal sounds and melodies to enhance emotional and physical well-being. Studies show that structured vocal exercises can improve cognitive function, reduce stress, and enhance social interaction.</p>
+  </section>
+  
+  <section>
+    <h2>Satellite Data and Urban Well-being</h2>
+    <p>Using Copernicus and Galileo satellite data, MOVERE 2.0 identifies urban areas with high environmental stress and limited access to green spaces. This allows us to map optimal locations for chant therapy interventions.</p>
+  </section>
 
-    <section>
-        <h2>Comparing Data Across Cities</h2>
-        <p>To demonstrate the impact of environmental factors on mental health, we analyzed satellite data from different cities:</p>
-        <table border="1">
-            <tr>
-                <th>City</th>
-                <th>Green Space Coverage</th>
-                <th>Air Pollution (NO₂)</th>
-                <th>Stress Index</th>
-            </tr>
-            <tr>
-                <td>Cagliari, Italy (Sardinia)</td>
-                <td>35%</td>
-                <td>Moderate</td>
-                <td>High</td>
-            </tr>
-            <tr>
-                <td>Florence, Italy (Tuscany)</td>
-                <td>42%</td>
-                <td>Low</td>
-                <td>Medium</td>
-            </tr>
-            <tr>
-                <td>Verona, Italy (Veneto)</td>
-                <td>30%</td>
-                <td>High</td>
-                <td>High</td>
-            </tr>
-            <tr>
-                <td>Aarhus, Denmark</td>
-                <td>50%</td>
-                <td>Low</td>
-                <td>Low</td>
-            </tr>
-            <tr>
-                <td>Vilnius, Lithuania</td>
-                <td>45%</td>
-                <td>Moderate</td>
-                <td>Medium</td>
-            </tr>
-            <tr>
-                <td>Berlin, Germany</td>
-                <td>38%</td>
-                <td>High</td>
-                <td>High</td>
-            </tr>
-        </table>
-    </section>
-
-    <section>
-        <h2>Collaboration and Mapping</h2>
-        <p>MOVERE 2.0 is working with families, schools, and institutions to map locations suitable for chant therapy. We aim to provide a list of music schools, conservatories, and green spaces where therapy sessions can be conducted.</p>
-    </section>
-
-    <section>
-        <h2>Try Your Own Melodies</h2>
-        <p>If you want to experiment with melodies, here’s an opportunity to play the piano directly on your PC or mobile:</p>
-        <a href="https://onlinepiano.app/it/" target="_blank">🎹 Play Piano Online</a>
-    </section>
-
-    <footer>
-        <p>Contact: movereinsalus.project@gmail.com</p>
-        <button onclick="window.location.href='index.html'">🔙 Back to Main Menu</button>
-    </footer>
-
-    <script>
-        function translatePage() {
-            window.location.href = "cantoterapia_it.html";
-        }
-    </script>
+  <section>
+    <h2>Comparing Data Across Cities</h2>
+    <p>To demonstrate the impact of environmental factors on mental health, we analyzed satellite data from different cities:</p>
+    <table>
+      <tr>
+        <th>City</th>
+        <th>Green Space Coverage</th>
+        <th>Air Pollution (NO₂)</th>
+        <th>Stress Index</th>
+      </tr>
+      <tr>
+        <td>Cagliari, Italy (Sardinia)</td>
+        <td>35%</td>
+        <td>Moderate</td>
+        <td>High</td>
+      </tr>
+      <tr>
+        <td>Florence, Italy (Tuscany)</td>
+        <td>42%</td>
+        <td>Low</td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>Verona, Italy (Veneto)</td>
+        <td>30%</td>
+        <td>High</td>
+        <td>High</td>
+      </tr>
+      <tr>
+        <td>Aarhus, Denmark</td>
+        <td>50%</td>
+        <td>Low</td>
+        <td>Low</td>
+      </tr>
+      <tr>
+        <td>Vilnius, Lithuania</td>
+        <td>45%</td>
+        <td>Moderate</td>
+        <td>Medium</td>
+      </tr>
+      <tr>
+        <td>Berlin, Germany</td>
+        <td>38%</td>
+        <td>High</td>
+        <td>High</td>
+      </tr>
+    </table>
+  </section>
+  
+  <section>
+    <h2>Collaboration and Mapping</h2>
+    <p>MOVERE 2.0 is working with families, schools, and institutions to map locations suitable for chant therapy. We aim to provide a list of music schools, conservatories, and green spaces where therapy sessions can be conducted.</p>
+  </section>
+  
+  <section>
+    <h2>Try Your Own Melodies</h2>
+    <p>If you want to experiment with melodies, here’s an opportunity to play the piano directly on your PC or mobile:</p>
+    <a href="https://onlinepiano.app/it/" target="_blank">🎹 Play Piano Online</a>
+  </section>
+  
+  <footer>
+    <p>Contact: movereinsalus.project@gmail.com</p>
+    <button onclick="window.location.href='index.html'">🔙 Back to Main Menu</button>
+  </footer>
+  
+  <script>
+    function translatePage() {
+      window.location.href = "cantoterapia_it.html";
+    }
+  </script>
 </body>
 </html>
