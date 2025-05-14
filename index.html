@@ -98,7 +98,12 @@
 
 <body>
   <div id="overlay">
-    <button id="language-toggle">🇮🇹 / 🇬🇧</button>
+    <div style="position: absolute; top: 20px; left: 20px; z-index: 10000;">
+  <button id="language-toggle"
+    style="padding: 8px 14px; border-radius: 10px; background: #00bfff; border: none; color: white; font-weight: bold; cursor: pointer;">
+    🇮🇹 Switch to Italian
+  </button>
+</div>
 
     <img src="https://github.com/TizyM/COSMOpet/raw/main/a%20dog%20astronaut%20named%20COSMO.png" 
          alt="Cosmo the space dog" id="cosmo-img">
@@ -122,13 +127,40 @@
 
 
   <script>
-    document.getElementById("start-adventure").addEventListener("click", () => {
-      window.location.href = "main.html";
-    });
+  document.getElementById("start-adventure").addEventListener("click", () => {
+    window.location.href = "main.html";
+  });
 
-    document.getElementById("language-toggle").addEventListener("click", () => {
-      alert("Language toggle coming soon! 😄");
-    });
-  </script>
+  const toggleButton = document.getElementById("language-toggle");
+  const speechBubble = document.querySelector(".speech-bubble");
+
+  let isEnglish = true;
+
+  toggleButton.addEventListener("click", () => {
+    if (isEnglish) {
+      speechBubble.innerHTML = `
+        <h2>Ciao! Sono COSMO, il tuo compagno spaziale digitale! 🚀🐶</h2>
+        <p>
+          Preparati a un <strong>viaggio spaziale fantastico</strong>! 🌌✨<br>
+          Giocheremo con <strong>giochi musicali divertenti</strong>, ti insegnerò a <strong>rilassarti</strong>,  
+          e anche a <strong>mangiare bene</strong> come gli astronauti! 🥦🚀  
+          <br>Pronti all'avventura? 3... 2... 1... VIA! 🚀🔥  
+        </p>`;
+      toggleButton.innerHTML = "🇬🇧 Switch to English";
+    } else {
+      speechBubble.innerHTML = `
+        <h2>Hi there! I'm COSMO, the AI space buddy of Team MOVERE! 🚀🐶</h2>
+        <p>
+          Get ready for an <strong>amazing space journey</strong>! 🌌✨<br>
+          We'll play <strong>fun musical games</strong>, I'll teach you how to <strong>relax</strong>,  
+          and even how to <strong>eat healthy</strong> like astronauts! 🥦🚀  
+          <br>Ready for the adventure? 3... 2... 1... GO! 🚀🔥  
+        </p>`;
+      toggleButton.innerHTML = "🇮🇹 Switch to Italian";
+    }
+    isEnglish = !isEnglish;
+  });
+</script>
+
 </body>
 </html>
