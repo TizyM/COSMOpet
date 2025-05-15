@@ -75,14 +75,38 @@ COSMOpet is designed with privacy-by-default, in compliance with
 [Italian Legislative Decree 101/2018](https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/9038275).
 
 
-## 4. Use Case Testing
+## 4. Use Case Testing – Simulated Urban Scenarios
 
-Simulated environment snapshots tested for:
-- 🇮🇹 Milan
-- 🇬🇷 Athens
+As part of the alpha phase, COSMOpet was tested with simulated Copernicus-based environmental data in two major European cities:
 
-Outcomes:  
-- High pollution and low green space → AI recommends breathing games, hydration, sound therapy.
+---
+
+### 🇮🇹 Milan (Italy)
+- 🔴 High NO₂ levels and air pollution  
+- 🌡️ Significant urban heat island presence  
+- 🌳 Low availability of accessible green areas  
+
+🧠 AI Response:  
+→ Triggered focus music, hydration reminders and a virtual breathing assistant.
+
+📍 Source: [View Milan simulation on COSMOpet Map](https://tizym.github.io/COSMOpet/map.html)
+
+---
+
+### 🇬🇷 Athens (Greece)
+- 🔴 High NO₂ concentration  
+- 🌳 Critically low green space per child  
+- 🌡️ Strong exposure to heat stress  
+
+🧠 AI Response:  
+→ Activated breathing game, calming music therapy and mascot animation to promote relaxation.
+
+📍 Source: [View Athens simulation on COSMOpet Map](https://tizym.github.io/COSMOpet/map.html)
+
+---
+
+📌 These use cases demonstrate the capacity of COSMOpet to simulate adaptive interventions based on geo-referenced satellite data and WHO thresholds.
+
 
 ## 5. Replicability and Scalability in the EU
 
