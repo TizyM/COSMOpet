@@ -15,11 +15,12 @@ COSMOpet integrates open-source Earth Observation data from the Copernicus Progr
   Parameters used: NO₂, PM10, O₃ – via Sentinel-4
 
 - **Urban Vegetation Mapping**  
-  Source: [Copernicus HR-VPP](https://land.copernicus.eu/pan-european/high-resolution-vegetation-phenology-and-productivity)  
-  Used for mapping green access (Sentinel-2)
+  - **Urban Vegetation Mapping**  
+  Source: [Copernicus Land Monitoring Service](https://land.copernicus.eu/en)  
+  Map viewer: [Copernicus Interactive Viewer](https://land.copernicus.eu/en/map-viewer)
 
 - **Geolocation**  
-  Based on Galileo GNSS (simulated)
+  Based on [Galileo GNSS](https://www.usegalileo.eu/EN/) – simulated location trigger
 
 ## 3. Data Processing Logic
 
