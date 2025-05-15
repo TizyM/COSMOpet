@@ -26,8 +26,9 @@ COSMOpet integrates open-source Earth Observation data from the Copernicus Progr
   Map viewer: [Copernicus Interactive Viewer](https://land.copernicus.eu/en/map-viewer)
 
 - **Geolocation**  
-  Based on [Galileo GNSS](https://www.usegalileo.eu/EN/) – the European global navigation satellite system.  
-  COSMOpet simulates Galileo-based geolocation to identify urban zones under environmental stress and link user location to Copernicus data layers.
+  Based on [Galileo GNSS](https://www.usegalileo.eu/EN/), the European Global Navigation Satellite System.  
+  COSMOpet simulates Galileo-based geolocation to identify urban zones under environmental stress and connect the user's position to satellite-derived Copernicus environmental layers.  
+  The simulation assigns a test city (e.g., Milan or Athens) to emulate live positioning, enabling contextual analysis of air quality and green space based on Sentinel data.
 
 ## 3. Data Processing Logic
 
