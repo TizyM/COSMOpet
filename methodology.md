@@ -11,8 +11,14 @@ COSMOpet was designed as a modular, scalable tool to support children's mental w
 COSMOpet integrates open-source Earth Observation data from the Copernicus Programme:
 
 - **Air Quality Data**  
-  Source: [Copernicus Atmosphere Monitoring Service (CAMS)](https://atmosphere.copernicus.eu/data)  
-  Parameters used: NO₂, PM10, O₃ – via Sentinel-4
+  Source: [Copernicus Atmosphere Monitoring Service (CAMS)](https://atmosphere.copernicus.eu/data) – via [Sentinel-4 mission](https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-4)  
+  COSMOpet processes simulated satellite data for:
+
+  - **NO₂ (Nitrogen Dioxide)** – linked to traffic and urban heating; high levels correlate with cognitive fatigue in children  
+  - **PM10 (Particulate Matter ≤10μm)** – can trigger respiratory inflammation, affecting mood and attention span  
+  - **O₃ (Ground-Level Ozone)** – increases during heatwaves; associated with oxidative stress and anxiety
+
+  These values are mapped against WHO thresholds to assess urban stress levels in selected test locations (e.g. Milan, Athens).
 
 - **Urban Vegetation Mapping**  
   - **Urban Vegetation Mapping**  
