@@ -51,5 +51,6 @@ All logic is designed respecting child mental well-being. No personal data are s
 
 ---
 
-📬 For details or collaboration: movereinsalus.project@gmail.com  (Tiziana Mori, Ph.D, Team Leader Movere 2.0)
+📬 For details or collaboration: movereinsalus.project@gmail.com 
+👩‍🏫 (Tiziana Mori, Ph.D, Team Leader Movere 2.0)
 🔗 Related: [iot-integration.md](./iot-integration.md)
