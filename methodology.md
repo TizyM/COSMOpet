@@ -10,6 +10,11 @@ COSMOpet was designed as a modular, scalable tool to support children's mental w
 
 COSMOpet integrates open-source Earth Observation data from the Copernicus Programme:
 
+- **Sentinel Satellite Data**  
+  COSMOpet uses simulated data from the Copernicus Sentinel missions to analyze environmental risk factors in urban settings.  
+  In particular, **Sentinel-4** provides air quality data (NO₂, PM10, O₃), while **Sentinel-2** enables the mapping of green space and vegetation density.  
+  These satellite datasets allow COSMOpet to contextualize a child’s location and adapt its therapeutic interventions accordingly.
+
 - **Air Quality Data**  
   Source: [Copernicus Atmosphere Monitoring Service (CAMS)](https://atmosphere.copernicus.eu/data) – via [Sentinel-4 mission](https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-4)  
   COSMOpet processes simulated satellite data for:
