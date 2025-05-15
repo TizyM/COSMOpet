@@ -1,0 +1,153 @@
+# 🛰️ IoT Integration – COSMOpet Prototype
+
+## 1. Current Alpha Stage
+
+COSMOpet is in alpha stage and does not yet use real IoT hardware. However, the system is designed to simulate satellite and biometric inputs to prepare for real-time integration.
+
+- 🌍 Urban environmental stress is modeled using Copernicus data layers (Sentinel-4, HR-VPP)
+- 📍 Positioning is simulated via Galileo GNSS logic (city-level urban context)
+- 🔬 Response logic is triggered using WHO reference thresholds
+
+Explore live simulation:  
+👉 [COSMOpet Map – Milan & Athens Environmental Demo](https://tizym.github.io/COSMOpet/map.html)
+
+---
+
+## 2. Future Roadmap (2025–2026)
+
+With support from partners such as **Kineis** and **AllThingsTalk**, COSMOpet plans to incorporate real IoT devices by end 2025:
+
+| IoT Component | Function | Phase |
+|---------------|----------|-------|
+| 🔊 Noise sensor | Detect ambient stressors | Q4 2025 |
+| ❤️ Heart rate monitor | Biometric stress detection | Q1 2026 |
+| 📲 Mobile sync | AI personalization engine | Q1 2026 |
+
+---
+
+## 3. Data Protection & Ethics
+
+- 🔐 **Privacy-first**: user input is anonymized
+- 📜 **GDPR-compliant**: EU Regulation 2016/679  
+- 🤝 **Transparency**: open-source logic and public roadmap
+
+COSMOpet collects no sensitive personal data. Sensor-based features will include informed consent options.
+
+---
+
+## 4. Pilot Network & Local Partners
+
+Already collaborating in Italy with:
+
+- 🏛️ Municipality of Serdiana  
+- 🧠 Pediatric and veterinary advisors  
+- 🎵 Music therapy and Blue Zone longevity researchers  
+- 🤝 NGOs: ARKA Eventi Culturali & Sardonia Italia
+
+These partners have provided letters of intent and pilot participation support.
+
+---
+
+## 5. EU-Ready Replicability
+
+Thanks to modular logic, the IoT system is compatible with:
+
+- National health and education systems
+- Local languages and cultural approaches
+- NGO and school-driven implementation
+
+📌 Future co-design opportunities are open to EU Hackathon participants.
+
+---
+
+## 🔗 Related Technical Resources
+
+- [COSMOpet Main Page](https://tizym.github.io/COSMOpet/)
+- [📄 Methodology – How COSMOpet Works](https://github.com/TizyM/COSMOpet/blob/main/methodology.md)
+- [📡 Satellite & Urban Simulation (map.html)](https://tizym.github.io/COSMOpet/map.html)
+- [📦 GitHub README](https://github.com/TizyM/COSMOpet/blob/main/README.md)
+
+> 🇮🇹 An Italian version can be made available upon request.  
+> 🔄 COSMOpet is an alpha-stage prototype under open development (2024–2026).
+
+# 🛰️ IoT Integration – COSMOpet Prototype
+
+## 1. Current Alpha Stage
+
+COSMOpet is in alpha stage and does not yet use real IoT hardware. However, the system is designed to simulate satellite and biometric inputs to prepare for real-time integration.
+
+- 🌍 Urban environmental stress is modeled using Copernicus data layers (Sentinel-4, HR-VPP)
+- 📍 Positioning is simulated via Galileo GNSS logic (city-level urban context)
+- 🔬 Response logic is triggered using WHO reference thresholds
+
+Explore live simulation:  
+👉 [COSMOpet Map – Milan & Athens Environmental Demo](https://tizym.github.io/COSMOpet/map.html)
+
+---
+
+## 2. Future Roadmap (2025–2026)
+
+With support from partners such as **Kineis** and **AllThingsTalk**, COSMOpet plans to incorporate real IoT devices by end 2025:
+
+| IoT Component | Function | Phase |
+|---------------|----------|-------|
+| 🔊 Noise sensor | Detect ambient stressors | Q4 2025 |
+| ❤️ Heart rate monitor | Biometric stress detection | Q1 2026 |
+| 📲 Mobile sync | AI personalization engine | Q1 2026 |
+
+---
+
+## 3. Data Protection & Ethics
+
+- 🔐 **Privacy-first**: user input is anonymized
+- 📜 **GDPR-compliant**: EU Regulation 2016/679  
+- 🤝 **Transparency**: open-source logic and public roadmap
+
+COSMOpet collects no sensitive personal data. Sensor-based features will include informed consent options.
+
+---
+
+## 4. Pilot Network & Local Partners
+
+Already collaborating in Italy with:
+
+- 🏛️ Municipality of Serdiana  
+- 🧠 Pediatric and veterinary advisors  
+- 🎵 Music therapy and Blue Zone longevity researchers  
+- 🤝 NGOs: ARKA Eventi Culturali & Sardonia Italia
+
+These partners have provided letters of intent and pilot participation support.
+
+---
+
+## 5. EU-Ready Replicability
+
+Thanks to modular logic, the IoT system is compatible with:
+
+- National health and education systems
+- Local languages and cultural approaches
+- NGO and school-driven implementation
+
+📌 Future co-design opportunities are open to EU Hackathon participants.
+
+---
+
+## 🔗 Related Technical Resources
+
+- [COSMOpet Main Page](https://tizym.github.io/COSMOpet/)
+- [📄 Methodology – How COSMOpet Works](https://github.com/TizyM/COSMOpet/blob/main/methodology.md)
+- [📡 Satellite & Urban Simulation (map.html)](https://tizym.github.io/COSMOpet/map.html)
+- [📦 GitHub README](https://github.com/TizyM/COSMOpet/blob/main/README.md)
+
+> 🇮🇹 An Italian version can be made available upon request.  
+> 🔄 COSMOpet is an alpha-stage prototype under open development (2024–2026).
+---
+
+## 📩 Contact
+
+For questions, collaboration proposals, or pilot implementation in your EU country:
+
+**Tiziana Mori, Ph.D**  
+Team Leader – Movere 2.0 (COSMOpet Project)  
+📧 movereinsalus.project@gmail.com
+
