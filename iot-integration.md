@@ -15,13 +15,15 @@ Explore live simulation:
 
 ## 2. Future Roadmap (2025–2026)
 
-With support from partners such as **Kineis** and **AllThingsTalk**, COSMOpet plans to incorporate real IoT devices by end 2025:
+a) With support from partners such as **Kineis** and **AllThingsTalk**, COSMOpet plans to incorporate real IoT devices by end 2025:
 
 | IoT Component | Function | Phase |
 |---------------|----------|-------|
 | 🔊 Noise sensor | Detect ambient stressors | Q4 2025 |
 | ❤️ Heart rate monitor | Biometric stress detection | Q1 2026 |
 | 📲 Mobile sync | AI personalization engine | Q1 2026 |
+
+b) 🛰️ IoT cloud integration will be tested using platforms such as **AllThingsTalk** (official Cassini Hackathon partner for real-time sensor dashboards and connectivity).
 
 ---
 
