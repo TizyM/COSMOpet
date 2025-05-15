@@ -17,5 +17,5 @@ For more information, visit the live project site:
 - 🧪 [Interactive Map with Environmental Simulations (Milan & Athens)](https://tizym.github.io/COSMOpet/map.html)
 - 📄 [Methodology Document](https://github.com/TizyM/COSMOpet/blob/main/methodology.md)
 - 🛰️ [IoT Integration Overview](https://github.com/TizyM/COSMOpet/blob/main/iot-integration.md)
-- 🔧 [AllThingsTalk IoT Dashboard] 🔗 [AllThingsTalk GitHub – Cassini IoT Toolkit](https://github.com/allthingstalk)
+- 🔧 [AllThingsTalk GitHub – Cassini IoT Toolkit](https://github.com/allthingstalk)
 
