@@ -90,9 +90,9 @@ Prototipo sviluppato da: **Tiziana Mori e Team Movere 2.0**
 - [`methodology.md`](./methodology.md)
 - [`iot-integration.md`](./iot-integration.md)
 
-En ---
+---
 
-## EN COSMOpet – Space-Enhanced Pet Therapy
+## 🇬🇧 COSMOpet – Space-Enhanced Pet Therapy
 
 An educational and therapeutic digital prototype designed to improve children's mental well-being, using satellite data, artificial intelligence, and a virtual therapy mascot.
 
