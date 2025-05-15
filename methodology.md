@@ -130,6 +130,19 @@ Thanks to its structure, the platform can be adapted to:
 All logic is designed respecting child mental well-being. No personal data are stored. Future deployments will include opt-in forms, GDPR-compliant flows, and transparency dashboards.
 
 ---
+---
+
+## 7. Official References & Compliance
+
+COSMOpet follows the official Cassini Hackathon guidelines for IoT connectivity, using the AllThingsTalk integration path and satellite simulation logic.
+
+📄 Official Cassini IoT Integration Commit:  
+🔗 [GitHub – AllThingsTalk/Cassini Hackathons](https://github.com/allthingstalk/cassini-hackathons/commit/2aaf37d5ca81ccc940c3f2b0dd24e8efaa7bd8c3)
+
+🌍 COSMOpet is currently in alpha stage, simulating data and geolocation. Real sensor dashboards and device connectivity (via Kineis + AllThingsTalk) are part of the roadmap 2025–2026.
+
+> 🇮🇹 Italian version available upon request.
+---
 
 📬 For details or collaboration: movereinsalus.project@gmail.com 
 👩‍🏫 (Tiziana Mori, Ph.D, Team Leader Movere 2.0)
