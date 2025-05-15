@@ -148,6 +148,12 @@ function switchLanguage() {
   en.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
   it.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
 }
+  window.addEventListener('DOMContentLoaded', () => {
+  // Nascondi l'italiano e mostra solo l'inglese all'avvio
+  document.querySelectorAll('.lang-it').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'block');
+});
+
 </script>
 
 </body>
