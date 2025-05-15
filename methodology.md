@@ -84,13 +84,22 @@ Simulated environment snapshots tested for:
 Outcomes:  
 - High pollution and low green space → AI recommends breathing games, hydration, sound therapy.
 
-## 5. Replicability
+## 5. Replicability and Scalability in the EU
 
-The methodology is replicable across EU thanks to open data and modular logic. COSMOpet adapts easily to:
+COSMOpet is designed with a modular architecture and open-data logic, making it easily replicable across European countries participating in the Cassini Hackathon (e.g. 🇩🇪 Germany, 🇫🇷 France, 🇩🇰 Denmark, 🇫🇮 Finland, 🇱🇹 Lithuania, 🇲🇰 North Macedonia, 🇷🇴 Romania).
 
-- Local languages
-- Health system variations
-- NGO, school or municipal partnerships
+Thanks to its structure, the platform can be adapted to:
+
+- 🗣️ **National languages and cultural contexts** (interface and content translations are supported)
+- 🏥 **Different health and education systems**, by adjusting stress thresholds and therapeutic protocols based on national standards
+- 🧩 **Existing partnerships with schools, municipalities, NGOs**, and local health professionals
+
+📌 COSMOpet already includes external collaborations in Italy with:
+- 2 nonprofit associations (Arka Eventi Culturali, Sardonia Italia)
+- A pediatrician and a veterinarian (external advisors)
+- The Municipality of Serdiana (pilot for music therapy training)
+
+💡 New partnerships in other EU countries are welcome for testing, co-design, and pilot deployments.
 
 ## 6. Ethical Compliance
 
