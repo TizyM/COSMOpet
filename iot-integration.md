@@ -103,6 +103,16 @@ COSMOpet complies with the open integration architecture suggested by the Cassin
 > 🇮🇹 An Italian version can be made available upon request.  
 > 🔄 COSMOpet is an alpha-stage prototype under open development (2024–2026).
 
+---
+
+## 🧠 Interactive Demo – Gamification & Chatbot (Alpha Concept)
+
+We developed a dedicated simulation page for COSMOpet's future chatbot and educational games:
+
+👉 [Explore COSMOpet Games & Chatbot Preview](https://tizym.github.io/COSMOpet/games.html)
+
+This page shows how COSMOpet will interact with users and trigger relaxation or health content based on environmental and geolocation data.
+
 
 ## 📩 Contact
 
