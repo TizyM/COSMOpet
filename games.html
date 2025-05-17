@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎮 Games & Chatbot – COSMOpet</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f1f6fb;
+      color: #222;
+      padding: 20px;
+    }
+    h1 {
+      color: #004aad;
+      text-align: center;
+    }
+    .lang-switch {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+    iframe {
+      width: 100%;
+      max-width: 720px;
+      height: 400px;
+      display: block;
+      margin: 20px auto;
+      border: none;
+      border-radius: 12px;
+    }
+    .section {
+      max-width: 800px;
+      margin: 0 auto 40px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #004aad;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<div class="lang-switch">
+  <button onclick="switchLanguage()">🌐 Switch to Italian</button>
+</div>
+
+<h1 class="lang-en">🎮 Games & Chatbot – COSMOpet Digital Companion</h1>
+<h1 class="lang-it" style="display:none">🎮 Giochi & Chatbot – COSMOpet Compagno Digitale</h1>
+
+<div class="section">
+  <h2 class="lang-en">🎬 Therapeutic Game – Breathing and Rhythm</h2>
+  <h2 class="lang-it" style="display:none">🎬 Gioco Terapeutico – Respiro e Ritmo</h2>
+  <iframe src="https://www.youtube.com/embed/GSjfQfu-dUs" allowfullscreen></iframe>
+</div>
+
+<div class="section">
+  <h2 class="lang-en">🤖 Chatbot Simulation – COSMO, Your Virtual Buddy</h2>
+  <h2 class="lang-it" style="display:none">🤖 Simulazione Chatbot – COSMO, il tuo Amico Virtuale</h2>
+  <img src="https://raw.githubusercontent.com/TizyM/COSMOpet/main/A_UI_screen_mockup_of_a_chatbot_interaction_with_C.png" alt="Chatbot Simulation">
+  <p class="lang-en">In this demo, COSMO welcomes children with: <em>"Hi, I'm your virtual space pet! How can I help you today?"</em> Children can choose:</p>
+  <p class="lang-it" style="display:none">In questa demo, COSMO accoglie i bambini con: <em>"Ciao, sono il tuo pet spaziale virtuale! Come posso aiutarti oggi?"</em> I bambini possono scegliere:</p>
+  <ul>
+    <li class="lang-en">🎓 Talk to: Nutritionist, Psychologist, Music Therapist, Event Coordinator</li>
+    <li class="lang-it" style="display:none">🎓 Parla con: Nutrizionista, Psicologo, Musicoterapeuta, Coordinatore Eventi</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2 class="lang-en">🧩 Role-Playing Scenario</h2>
+  <h2 class="lang-it" style="display:none">🧩 Gioco di Ruolo Educativo</h2>
+  <p class="lang-en">
+    COSMO presents a mission: "Anxiety levels are rising in the classroom! Help your classmates with a calm music game and breathing challenge!"
+    The child must choose actions and tools from COSMO’s digital kit.
+  </p>
+  <p class="lang-it" style="display:none">
+    COSMO lancia una missione: "I livelli di ansia stanno salendo in classe! Aiuta i tuoi compagni con un gioco musicale rilassante e una sfida di respirazione!"
+    Il bambino deve scegliere azioni e strumenti dal kit digitale di COSMO.
+  </p>
+</div>
+
+<div class="section">
+  <h2 class="lang-en">📩 Contacts & Partners</h2>
+  <h2 class="lang-it" style="display:none">📩 Contatti & Partner</h2>
+  <p><strong>Dr. Tiziana Mori, Ph.D</strong> – Team Leader of Movere 2.0</p>
+  <p>Email: <a href="mailto:movereinsalus.project@gmail.com">movereinsalus.project@gmail.com</a></p>
+  <p class="lang-en">Partners: Civic Music School (IT), ARKA Eventi Culturali, Sardonia Italia</p>
+  <p class="lang-it" style="display:none">Partner: Scuola Civica di Musica (IT), ARKA Eventi Culturali, Sardonia Italia</p>
+  <p><em>🔄 COSMOpet is an alpha-stage prototype under active development</em></p>
+</div>
+
+<footer>
+  <a href="main.html" class="button">← Back to Home</a>
+</footer>
+
+<script>
+function switchLanguage() {
+  const en = document.querySelectorAll('.lang-en');
+  const it = document.querySelectorAll('.lang-it');
+  en.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
+  it.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
+}
+</script>
+
+</body>
+</html>
