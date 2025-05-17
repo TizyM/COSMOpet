@@ -40,6 +40,21 @@
       border-radius: 12px;
       margin-top: 20px;
     }
+    .option-btn {
+      display: block;
+      background: #004aad;
+      color: white;
+      border: none;
+      padding: 10px;
+      margin: 10px 0;
+      width: 100%;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    .option-btn:hover {
+      background-color: #0066cc;
+    }
     footer {
       text-align: center;
       margin-top: 40px;
@@ -60,6 +75,7 @@
   </header>
 
   <div class="container">
+    <!-- ENGLISH -->
     <div class="lang-en">
       <p>This is a simulation of the COSMOpet chatbot interface, designed for use in urban areas under environmental stress.</p>
       <div class="highlight-box">
@@ -72,8 +88,17 @@
         </ul>
       </div>
       <img src="https://github.com/TizyM/COSMOpet/blob/main/schermata%20chatbot%20CosmoPet-MoverePorject_ita.png?raw=true" alt="Chatbot Screenshot">
+
+      <div class="highlight-box">
+        <p><strong>Try COSMOpet!</strong> Choose an option to see how the chatbot will work:</p>
+        <button class="option-btn" onclick="showReply('nutrition')">📬 Contact a Nutritionist</button>
+        <button class="option-btn" onclick="showReply('relax')">🧘 Relaxation Advice</button>
+        <button class="option-btn" onclick="showReply('trigger')">🚨 Environmental Trigger</button>
+        <div id="reply-box" class="highlight-box" style="display:none;"></div>
+      </div>
     </div>
 
+    <!-- ITALIANO -->
     <div class="lang-it" style="display:none">
       <p>Questa è una simulazione dell'interfaccia chatbot COSMOpet, progettata per l'uso in aree urbane ad alto stress ambientale.</p>
       <div class="highlight-box">
@@ -86,6 +111,14 @@
         </ul>
       </div>
       <img src="https://github.com/TizyM/COSMOpet/blob/main/schermata%20chatbot%20CosmoPet-MoverePorject_ita.png?raw=true" alt="Schermata Chatbot">
+
+      <div class="highlight-box">
+        <p><strong>Prova COSMOpet!</strong> Scegli un'opzione per vedere come funzionerà il chatbot:</p>
+        <button class="option-btn" onclick="showReply('nutrition')">📬 Contatta un nutrizionista</button>
+        <button class="option-btn" onclick="showReply('relax')">🧘 Consiglio rilassamento</button>
+        <button class="option-btn" onclick="showReply('trigger')">🚨 Allerta ambientale</button>
+        <div id="reply-box" class="highlight-box" style="display:none;"></div>
+      </div>
     </div>
   </div>
 
@@ -99,7 +132,27 @@
       const en = document.querySelectorAll('.lang-en');
       const it = document.querySelectorAll('.lang-it');
       en.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
-      it.forEach(el => el.style.display = it[0].style.display === 'none' ? 'block' : 'none');
+      it.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
+    }
+
+    function showReply(option) {
+      const box = document.getElementById('reply-box');
+      let response = '';
+
+      switch(option) {
+        case 'nutrition':
+          response = "✅ We'll email your request to movereinsalus.project@gmail.com 📧";
+          break;
+        case 'relax':
+          response = "🧘 Take a deep breath. Let's try the guided breathing game!";
+          break;
+        case 'trigger':
+          response = "🌍 Copernicus data indicates high NO₂ levels. Recommending: music therapy + COSMOpet interaction.";
+          break;
+      }
+
+      box.innerHTML = `<strong>Response:</strong> <br>${response}`;
+      box.style.display = 'block';
     }
   </script>
 
