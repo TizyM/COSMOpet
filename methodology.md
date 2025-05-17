@@ -156,6 +156,14 @@ For a preview of COSMOpet's chatbot interaction logic and gamified modules, visi
 The page includes role-based design and interaction logic for environmental-based therapeutic actions.
 
 ---
+🤖 Chatbot Demo Preview
+Experience the early visual simulation of COSMOpet's future chatbot:
+👉 Open COSMOpet Chatbot Demo:<a href="https://tizym.github.io/COSMOpet/chatbot-cosmopet.html" target="_blank">Visita Chatbot COSMOpet</a>
+
+The assistant will guide children and caregivers via email triggers and simulated content based on environmental data.
+(Alpha prototype – English/Italian switch enabled)
+
+---
 
 📬 For details or collaboration: movereinsalus.project@gmail.com 
 👩‍🏫 (Tiziana Mori, Ph.D, Team Leader Movere 2.0)
