@@ -15,8 +15,9 @@ COSMOpet is in alpha stage and does not yet use real IoT hardware. However, the 
 Explore live simulation:  
 👉 [COSMOpet Map – Milan & Athens Environmental Demo](https://tizym.github.io/COSMOpet/map.html)
 <p align="center">
-  <img src="https://github.com/TizyM/COSMOpet/blob/main/previpass-bologna.png?raw=true" width="70%" alt="ARGOS PreviPass over Bologna">
+  <img src="https://github.com/TizyM/COSMOpet/blob/main/previpass%20Bologna-Team%20MOVERE%202.0.png?raw=true" width="70%" alt="ARGOS PreviPass over Bologna">
 </p>
+
 
 > 🛰️ This screenshot shows the actual ARGOS satellite pass (PreviPass) over Bologna, Italy, during the Cassini Hackathon 2025.  
 > COSMOpet is ready to interact with satellite tracking logic for real-world IoT expansion.
