@@ -26,6 +26,16 @@ For more information, visit the live project site:
 
 ---
 
+## 🛰️ Note on Sentinel-4 (Air Quality Data)
+
+The COSMOpet prototype currently simulates Sentinel-4 satellite data to detect environmental stressors such as **NO₂, PM10, and O₃** levels.  
+Although Sentinel-4 is not yet fully operational (expected mid-2025), our logic is designed to be compatible with its upcoming capabilities.
+
+In the meantime, we emulate air quality readings using methodology aligned with **CAMS – Copernicus Atmosphere Monitoring Service**, enabling realistic test conditions for COSMOpet’s urban wellness mission.
+
+---
+
+
 ## 💬 Chatbot – COSMOpet Demo Preview
 
 We have also created a **prototype preview page** of the COSMOpet chatbot assistant:  
