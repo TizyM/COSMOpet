@@ -14,7 +14,9 @@ COSMOpet is in alpha stage and does not yet use real IoT hardware. However, the 
 
 Explore live simulation:  
 👉 [COSMOpet Map – Milan & Athens Environmental Demo](https://tizym.github.io/COSMOpet/map.html)
-We have also simulated urban heat stress in Cagliari (Sardinia) to reflect Southern EU climate conditions.
+
+We have also simulated urban heat stress in Cagliari (Sardinia) to reflect Southern EU climate conditions — available in the same COSMOpet Environmental Map page as Milan and Athens.
+
 <p align="center">
   <img src="https://github.com/TizyM/COSMOpet/blob/main/previpass%20Bologna-Team%20MOVERE%202.0.png?raw=true" width="70%" alt="ARGOS PreviPass over Bologna">
 </p>
