@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COSMOpet Virtual Assistant – Demo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #222;
+      padding: 20px;
+      margin: 0;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h1 {
+      color: #004aad;
+    }
+    .lang-switch {
+      text-align: right;
+      margin-bottom: 10px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    .highlight-box {
+      background-color: #eef4ff;
+      border-left: 5px solid #004aad;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    img {
+      max-width: 100%;
+      border: 2px solid #004aad;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="lang-switch">
+    <button onclick="switchLanguage()">🌐 Switch to Italian</button>
+  </div>
+
+  <header>
+    <h1 class="lang-en">💬 COSMOpet Virtual Assistant – Demo Preview</h1>
+    <h1 class="lang-it" style="display:none;">💬 COSMOpet Assistente Virtuale – Anteprima</h1>
+  </header>
+
+  <div class="container">
+    <div class="lang-en">
+      <p>This is a simulation of the COSMOpet chatbot interface, designed for use in urban areas under environmental stress.</p>
+      <div class="highlight-box">
+        <strong>Features:</strong>
+        <ul>
+          <li>📬 Contact nutritionist, psychologist, music therapist, or local coordinator</li>
+          <li>📍 Personalized interaction via simulated Galileo GNSS</li>
+          <li>🎯 Triggers based on Copernicus environmental data</li>
+          <li>📨 GDPR-compliant data collection and consent system</li>
+        </ul>
+      </div>
+      <img src="https://github.com/TizyM/COSMOpet/blob/main/schermata%20chatbot%20CosmoPet-MoverePorject_ita.png?raw=true" alt="Chatbot Screenshot">
+    </div>
+
+    <div class="lang-it" style="display:none">
+      <p>Questa è una simulazione dell'interfaccia chatbot COSMOpet, progettata per l'uso in aree urbane ad alto stress ambientale.</p>
+      <div class="highlight-box">
+        <strong>Funzionalità:</strong>
+        <ul>
+          <li>📬 Contatto con nutrizionista, psicologo, cantoterapista o coordinatore locale</li>
+          <li>📍 Interazione personalizzata via Galileo GNSS simulato</li>
+          <li>🎯 Attivazioni basate su dati ambientali Copernicus</li>
+          <li>📨 Raccolta dati e consenso nel rispetto del GDPR</li>
+        </ul>
+      </div>
+      <img src="https://github.com/TizyM/COSMOpet/blob/main/schermata%20chatbot%20CosmoPet-MoverePorject_ita.png?raw=true" alt="Schermata Chatbot">
+    </div>
+  </div>
+
+  <footer>
+    <p><strong>COSMOpet</strong> is a research prototype by <strong>Movere 2.0</strong> (2024–2026 Alpha Stage)</p>
+    <p>Contact: <a href="mailto:movereinsalus.project@gmail.com">movereinsalus.project@gmail.com</a> (Tiziana Mori, Ph.D – Team Leader)</p>
+  </footer>
+
+  <script>
+    function switchLanguage() {
+      const en = document.querySelectorAll('.lang-en');
+      const it = document.querySelectorAll('.lang-it');
+      en.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
+      it.forEach(el => el.style.display = it[0].style.display === 'none' ? 'block' : 'none');
+    }
+  </script>
+
+</body>
+</html>
