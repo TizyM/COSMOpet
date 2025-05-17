@@ -113,6 +113,15 @@ We developed a dedicated simulation page for COSMOpet's future chatbot and educa
 
 This page shows how COSMOpet will interact with users and trigger relaxation or health content based on environmental and geolocation data.
 
+---
+🤖 Chatbot Demo Preview
+Experience the early visual simulation of COSMOpet's future chatbot:
+👉 Open COSMOpet Chatbot Demo: <a href="https://tizym.github.io/COSMOpet/chatbot-cosmopet.html" target="_blank">Visita Chatbot COSMOpet</a>
+
+The assistant will guide children and caregivers via email triggers and simulated content based on environmental data.
+(Alpha prototype – English/Italian switch enabled)
+
+---
 
 ## 📩 Contact
 
