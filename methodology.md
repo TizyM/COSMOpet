@@ -142,6 +142,19 @@ COSMOpet follows the official Cassini Hackathon guidelines for IoT connectivity,
 🌍 COSMOpet is currently in alpha stage, simulating data and geolocation. Real sensor dashboards and device connectivity (via Kineis + AllThingsTalk) are part of the roadmap 2025–2026.
 
 > 🇮🇹 Italian version available upon request.
+
+---
+
+---
+
+## 🧩 Simulation & Engagement Layer
+
+For a preview of COSMOpet's chatbot interaction logic and gamified modules, visit:
+
+👉 [Games + Chatbot Simulation – COSMOpet Demo](https://tizym.github.io/COSMOpet/games.html)
+
+The page includes role-based design and interaction logic for environmental-based therapeutic actions.
+
 ---
 
 📬 For details or collaboration: movereinsalus.project@gmail.com 
