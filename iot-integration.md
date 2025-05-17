@@ -61,8 +61,24 @@ Thanks to modular logic, the IoT system is compatible with:
 📌 Future co-design opportunities are open to EU Hackathon participants.
 
 ---
+---
 
-## 6. Official Reference
+## 6. Field Exploration (May 2025)
+
+During the final sprint of the CASSINI Hackathon, we retrieved simulated satellite tracking data using the ARGOS satellite passes over Bologna (May 16–18, 2025).  
+
+We explored the data structure provided by AllThingsTalk and Kineis as part of the official [CASSINI IoT Kit](https://github.com/allthingstalk/cassini-hackathons/blob/main/README.md), including:
+
+- 📡 PreviPass ARGOS logs (CSV + Excel)
+- 🛰️ Satellite visibility times for Bologna
+- 🧪 Simulated noise and heart rate parameters (future scope)
+
+This confirms COSMOpet's commitment to full integration of real-time IoT telemetry.
+
+> A visual trace of this analysis is available via our [Methodology](https://github.com/TizyM/COSMOpet/blob/main/methodology.md) section and Hackathon pitch deck.
+
+
+## 7. Official Reference
 
 COSMOpet complies with the open integration architecture suggested by the Cassini Hackathon initiative.
 
