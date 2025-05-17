@@ -14,6 +14,10 @@ COSMOpet integrates open-source Earth Observation data from the Copernicus Progr
   COSMOpet uses simulated data from the Copernicus Sentinel missions to analyze environmental risk factors in urban settings.  
   In particular, **Sentinel-4** provides air quality data (NO₂, PM10, O₃), while **Sentinel-2** enables the mapping of green space and vegetation density.  
   These satellite datasets allow COSMOpet to contextualize a child’s location and adapt its therapeutic interventions accordingly.
+  > 🛰️ **Note on Sentinel-4 Integration**  
+> COSMOpet currently uses simulated Copernicus data layers based on CAMS and Sentinel-5P.  
+> Sentinel-4 is not yet operational (planned launch: July 2025), but the system is already structured to incorporate its real-time data as soon as it becomes available.
+
 
 - **Air Quality Data**  
   Source: [Copernicus Atmosphere Monitoring Service (CAMS)](https://atmosphere.copernicus.eu/data) – via [Sentinel-4 mission](https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-4)  
