@@ -5,6 +5,10 @@
 COSMOpet is in alpha stage and does not yet use real IoT hardware. However, the system is designed to simulate satellite and biometric inputs to prepare for real-time integration.
 
 - 🌍 Urban environmental stress is modeled using Copernicus data layers (Sentinel-4, HR-VPP)
+  🛰️ Satellite data: Sentinel-4* (simulated), HR-VPP, Galileo
+
+> *Sentinel-4 will become operational in July 2025. COSMOpet simulates its functionality using existing CAMS-based logic.
+
 - 📍 Positioning is simulated via Galileo GNSS logic (city-level urban context)
 - 🔬 Response logic is triggered using WHO reference thresholds
 
