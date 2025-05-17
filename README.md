@@ -24,3 +24,21 @@ For more information, visit the live project site:
 - 🛰️ [IoT Integration Overview](https://github.com/TizyM/COSMOpet/blob/main/iot-integration.md)
 - 🔧 [AllThingsTalk GitHub – Cassini IoT Toolkit](https://github.com/allthingstalk)
 
+---
+
+## 💬 Chatbot – COSMOpet Demo Preview
+
+We have also created a **prototype preview page** of the COSMOpet chatbot assistant:  
+a simulated conversational interface where the mascot COSMO will help children and families explore health content.
+
+🎯 Demo features include:
+- Guided support for nutrition, psychology, music therapy and events
+- Trigger-based suggestions (air quality, stress)
+- GDPR-compliant contact form
+
+👉 [Click here to open the chatbot simulation](https://tizym.github.io/COSMOpet/chatbot-cosmopet.html)
+
+> 🧪 This is a **static preview** for demo purposes only.  
+> The chatbot is under development for interactive integration in 2025.
+
+> 🌐 Language switch available directly on the page (🇮🇹/🇬🇧)
