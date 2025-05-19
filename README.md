@@ -52,3 +52,15 @@ a simulated conversational interface where the mascot COSMO will help children a
 > The chatbot is under development for interactive integration in 2025.
 
 > 🌐 Language switch available directly on the page (🇮🇹/🇬🇧)
+--
+> © Tiziana Mori / AgriMotus – Movere in Salus 2024–2025
+Tutti i contenuti di questo progetto, compresi testi, grafiche, codici, chatbot, concept terapeutico e design esperienziale, sono protetti. Ne è vietata la copia, diffusione o riproduzione, totale o parziale, senza autorizzazione scritta dell’autrice.
+Movere in Salus è un progetto originale ideato e sviluppato dal team Movere 2.0.
+Tutti i diritti riservati.
+---
+© Tiziana Mori / AgriMotus – Movere in Salus 2024–2025
+All content of this project, including texts, graphics, codes, chatbot, therapeutic concept, and experiential design, is protected. Copying, distribution, or reproduction, in whole or in part, is prohibited without written authorization from the author.
+Movere in Salus is an original project conceived and developed by the Movere 2.0 team.
+All rights reserved.
+
+
