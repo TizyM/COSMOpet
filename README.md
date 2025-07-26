@@ -63,15 +63,10 @@ All content of this project, including texts, graphics, codes, chatbot, therapeu
 Movere in Salus is an original project conceived and developed by the Movere 2.0 team.
 All rights reserved. © Prof.ssa Tiziana Mori (Ph.D) – Movere in Salus 2025–2026-2027  
 Tutti i diritti riservati. 
-/ MovereInSalus CORE - Restricted Access License  
-Copyright (C) 
-This software is provided under PolyForm Shield License 1.0.0  
-See full terms at: https://polyformproject.org/licenses/shield/1.0.0  
+
 
 For commercial use or partnerships:  
 - Email: movereinsalus.project@gmail.com 
-- Required subject: "[MOVEREinSalus LICENSE] Request from [Your Organization]"  
 
-Unauthorized commercial use violates EU Directive 2016/943 on trade secrets.
 
 
